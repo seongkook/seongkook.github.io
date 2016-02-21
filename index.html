@@ -1,94 +1,470 @@
-
 <!DOCTYPE html>
+
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="author">
 
-    <title>Hello world with Bootstrap</title>
+    <title>Seongkook Heo</title>
+    <link crossorigin="anonymous" href=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    integrity=
+    "sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+    rel="stylesheet">
+    <link href="mystyle.css" rel="stylesheet" type="text/css">
+    <!-- Optional theme -->
+    <link crossorigin="anonymous" href=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+    integrity=
+    "sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r"
+    rel="stylesheet"><!-- Latest compiled and minified JavaScript -->
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <script src=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+    </script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar-fixed-top" id="page-top">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button class="navbar-toggle" data-target=
+                ".navbar-ex1-collapse" data-toggle="collapse" type=
+                "button"><span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span> <span class="icon-bar"></span>
+                <span class="icon-bar"></span></button> <a class=
+                "navbar-brand page-scroll" href="#page-top"><strong>Seongkook
+                Heo</strong></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
 
 
-    <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
+            <div class=
+            "collapse navbar-collapse navbar-ex1-collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
 
-  <body>
 
-    <div class="site-wrapper">
+                    <li>
+                        <a class="page-scroll" href="#page-top">About</a>
+                    </li>
 
-      <div class="site-wrapper-inner">
 
-        <div class="cover-container">
+                    <li>
+                        <a class="page-scroll" href="#research">Research</a>
+                    </li>
 
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">Seongkook Heo</h3>
-              <nav>
-                <ul class="nav masthead-nav">
-                  <li class="active"><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Features</a></li>
-                  <li><a href="#">Contact</a></li>
+
+                    <li>
+                        <a class="page-scroll" href=
+                        "#publication">Publication</a>
+                    </li>
+
+
+                    <li>
+                        <a class="page-scroll" href="#fun">Fun</a>
+                    </li>
                 </ul>
-              </nav>
             </div>
-          </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
 
-          <div class="inner cover">
-            <h1 class="cover-heading">Hello from Seongkook Heo</h1>
-            <p class="lead">I am Seongkook, a Ph.D. candidate at Computer Science Department at the KAIST.
-            </p>
 
-            <p class="lead">My primary research interest lies in enhancing touch interaction by using dynamic properties of a finger. I believe that natural user interfaces, especially touch interfaces, have a greater potential, as they sense more physical properties such as posture, velocity, or pressure.
-            </p>
-
-            <p class="lead">Besides working on a research, I love cycling and taking photographs.
-            </p>
-            
-            <p class="lead">
-              <a href="#" class="btn btn-lg btn-default">Learn more</a>
-            </p>
-          </div>
-
-          <div class="mastfoot">
-            <div class="inner">
-              <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-            </div>
-          </div>
-
+    <section class="intro-section" id="about">
+        <div class="container"><img class="img-responsive" src="me.jpg">
         </div>
 
-      </div>
 
+        <div class="container">
+            <h1 id="seongkookheo">Seongkook Heo</h1>
+
+
+            <p>Hi. I&#8217;m Seongkook Heo, a PhD candidate at the <a href=
+            "http://kaist.ac.kr">KAIST</a>. I&#8217;m studying HCI, especially
+            things related to developing new way to interact with computers in
+            different-form factors, with my advisor <a href=
+            "http://hcil.kaist.ac.kr/">Geehyuk Lee</a>. I was lucky to have
+            chances to collaborate with different companies, such as Samsung
+            Electronics, Hyundai Motors, Golfzon, and Hancom, and with
+            researchers in different departments, from electronic engineering
+            to industrial design. Last summer, I was an intern at Microsoft
+            Research with Ken Hinckley, which was also a great experience. I
+            learned a lot from these experiences. I'm currently at Autodesk
+            Research in Toronto for my internship with Tovi Grossman.</p>
+
+
+            <p>I always have been a geek and it is exciting to see the
+            technologies that I&#8217;ve seen in books and movies are becoming
+            real. Now computers are everywhere, and even very small computers
+            like the ones on our wrist are strong enough to run various apps
+            and connected to the internet. However, I think computers are still
+            not paying enough attention to us, like what we wanted to do, what
+            we can do, or what we really meant to do, so that we have to put
+            much effort to let them work for us. I am enthusiastic about making
+            these &#8216;rude&#8217; computers to become more sensitive to us,
+            so that we can benefit the mighty power of computers better.</p>
+
+
+            <p>What I love: thinking and building new idea, solving problems,
+            things that are beautiful, either aesthetically, logically, or
+            mecahnically, or something with a brilliant idea. I also love
+            bikes. Since I was 19, I have been on a bike saddle except one or
+            two years. I love the simple nature of the bike (which is becoming
+            more complex these days, but still all parts visible), and solid
+            mechanical link that converts my subtle musclular movement into the
+            bike movement without any latency (please, no plastic cranks).</p>
+
+
+            <p><a href=
+            "mailto:seongkook@kaist.ac.kr"><strong>Email</strong></a> |
+            <a href="cv.pdf"><strong>CV</strong></a> | <a href=
+            "https://scholar.google.com/citations?hl=en&amp;user=7r0_F0kAAAAJ"><strong>
+            Google scholar</strong></a></p>
+        </div>
+        <!--p.s: I'm on a job market. Please ping me if you're interested.-->
+    </section>
+
+
+    <section class="content-section" id="research">
+        <div class="container">
+            <h2 id="research">Research</h2>
+
+
+            <p>Our natural touch is rich and nuanced with full of physical
+            properties such as force and posture implying our intentions. Touch
+            interfaces, however, ignore this rich information and only consider
+            whether our finger is in contact within a screen area and the
+            contact location. In this talk, I will present different approaches
+            my colleagues and I made to enhance impoverished touch interaction,
+            for instance by using additional modalities like force or hover, or
+            by exploiting underutilized touch gestures.</p>
+
+
+            <h3 id="force-enrichedtouch">Force-enriched touch</h3>
+
+
+            <h4>Force Gestures</h4>
+
+
+            <p>When we touch a real world object, physics counts. We
+            automatically control force in multiple directions. It creates
+            tremendous different manipulations and expresses different nuance.
+            What if a touch screen can utilize multi-dimensional force with
+            touch operation? In this project, we developed a normal- and
+            tangential-force sensing mobile touch device and showed the
+            potential of combining touch with force with application
+            scenarios.</p>
+
+
+            <p>Presented at UIST &#8217;11. <a href="">Paper</a> / <a href=
+            "">Video</a></p>
+
+
+            <h4>ForceTap</h4>
+
+
+            <p>Force is a great modality that can enrich touch with continuous
+            pressure level. But as of 2011, there were almost no device with
+            force-sensing capability except the BlackBerry Storm 2, which was
+            unfortunately not very successful. It is understandable since
+            adding force sensors would result in the increased manufacturing
+            price and more complex structure. We came with a new idea of using
+            an accelerometer, which almost all modern mobile devices have, to
+            detect a strong and gentle tap by measuring the device movement
+            made by a tap.</p>
+
+
+            <p>Presented at MobileHCI &#8217;11. <a href="">Paper</a> /
+            <a href="">Video</a></p>
+
+
+            <h4>ForceDrag</h4>
+
+
+            <p>We thought about using force for touch input modifier, like
+            using modifier keys to make a mouse drag work for a different
+            function. During the process, we found that the friction makes the
+            forceful movement difficult to make (which is too obvious). So we
+            proposed a new way, named &#8216;force lock&#8217; to support light
+            drag after selecting a mode with a different force level. We also
+            discussed pros and cons of using force lock compared to just using
+            force as a modifier.</p>
+
+
+            <p>Presented at OZCHI &#8217;12 <a href="">Paper</a> / <a href=
+            "">Video</a></p>
+
+
+            <h4>Multi-touch Shear Interaction</h4>
+
+
+            <p>Use of a tangential force has been introduced in 2011 as noted
+            above. But think about how we interact with objects and also touch
+            surfaces. We use multiple fingers.</p>
+
+
+            <p>Presented at CHI &#8217;13. <a href="">Paper</a> / <a href=
+            "">Video</a></p>
+
+
+            <h3 id="hover-enrichedtouch">Hover-enriched touch</h3>
+
+
+            <h4>ThickPad</h4>
+
+
+            <p>This work was presented as a demonstration at UIST. This special
+            optical touchpad has an array of infrared LEDs and Photo
+            Transistors and a touch-sensitive layer on it. Thus, it can measure
+            hovering finger. Not only where it is, but also how it is tilted /
+            shaped.</p>
+
+
+            <p>Presented at UIST '11 (Demo) <a href="paper%20link">Paper</a> |
+            <a href="paper%20link">Video</a></p>
+
+
+            <h4>LongPad</h4>
+
+
+            <p>We bulit a larger optical touchpad so that it can cover the
+            whole palm rest area of a laptop.</p>
+
+
+            <p>Presented at CHI '13 <a href="paper%20link">Paper</a> | <a href=
+            "paper%20link">Video</a></p>
+
+
+            <h4>2.5D interaction</h4>
+
+
+            <p>What if we can combine both hover and force? How should we
+            design interaction for this rich input?</p>
+
+
+            <p>Presented at OZCHI '13 <a href="paper%20link">Paper</a></p>
+
+
+            <p>Book Chapter <a href="paper%20link">Paper</a></p>
+
+
+            <h4>PreTouch</h4>
+
+
+            <p>This work is from my internship with Ken Hinckley at MSR during
+            2015 summer. Details to be described later.</p>
+
+
+            <p>To be presented at CHI '16</p>
+
+
+            <h3 id="gettingthemostoutoftouch">Getting the most out of
+            touch</h3>
+
+
+            <h4>Ta-ta-tap</h4>
+
+
+            <p>We have fingers, whice is good.</p>
+
+
+            <p>Presented at CHI '14 <a href="paper%20link">Paper</a> | <a href=
+            "paper%20link">Video</a></p>
+
+
+            <h4>SplitBoard</h4>
+
+
+            <p>We now have very small touch screen on our wrist. Can we type
+            well?</p>
+
+
+            <p>Presented at CHI '15 <a href="paper%20link">Paper</a> | <a href=
+            "paper%20link">Video</a></p>
+
+
+            <h3 id="sensing6dof">Sensing 6DOF</h3>
+
+
+            <h4>IrCube</h4>
+
+
+            <p>IrCube is an optical 6-DOF tracker where a few photo-sensors can track the position and orientation of an LED cluster. The operating principle of the tracker is basically source localization by solving an inverse problem. </p>
+
+
+            <p>Presented at UIST '11 <a href="paper%20link">Paper</a> |
+            <a href="paper%20link">Video</a></p>
+
+
+            <h4>IrPen</h4>
+
+
+            <p>IrCube is an optical 6-DOF tracker where a few photo-sensors can track the position and orientation of an LED cluster. The operating principle of the tracker is basically source localization by solving an inverse problem. </p>
+
+
+            <p>Published at CG&amp;A <a href="paper%20link">Paper</a> |
+            <a href="paper%20link">Video</a></p>
+
+
+            <h3 id="others">Understanding people</h3>
+
+
+            <h4>Snapping</h4>
+
+
+            <p>Results from previous research, we assumed using the centroid, rather than the bounding box center, would provide a better way to help users with aligning objects. Through a user study, we examined the position of a center perceived by a user when aligning objects.</p>
+
+
+            <p>Presented at CHI '12 (WIP) <a href="paper%20link">Paper</a></p>
+
+
+            <h4>Mining social relationship</h4>
+
+
+            <p>Our goal is to show that it is possible to automatically infer social relationship types among people who stay together in an organization by analyzing communication patterns. We collected indoor co-location data and instant messenger data from 22 participants for one month. Based on the data, we designed and explored several indicators which are considered to be useful for mining social relationship types. We applied machine learning techniques using the indicators and found that it is possible to develop an intelligent method to infer social relationship types.</p>
+
+
+            <p>Presented at CSCW '13 <a href="paper%20link">Paper</a></p>
+
+
+            <h4>Participatory design</h4>
+
+
+            <p>Yes, we need to design interactive systems in-situ.</p>
+
+
+            <p>Presented at HCI Korea 2016 (Received best paper award) <a href=
+            "paper%20link">Paper</a> | <a href="paper%20link">Video</a></p>
+        </div>
+    </section>
+
+
+    <section class="content2-section" id="publication">
+        <div class="container">
+            <h2 id="publications">Publications</h2>
+
+
+            <h3 id="peer-reviewedconerencepapersandnotes">Peer-reviewed
+            Conerence Papers and Notes</h3>
+
+
+            <ul>
+                <li>What if we can combine both hover and force? How should we
+                design</li>
+
+
+                <li>What if we can combine both hover and force? How should we
+                design</li>
+
+
+                <li>What if we can combine both hover and force? How should we
+                design</li>
+
+
+                <li>What if we can combine both hover and force? How should we
+                design</li>
+
+
+                <li>What if we can combine both hover and force? How should we
+                design</li>
+
+
+                <li>What if we can combine both hover and force? How should we
+                design</li>
+
+
+                <li>What if we can combine both hover and force? How should we
+                design</li>
+
+
+                <li>What if we can combine both hover and force? How should we
+                design</li>
+
+
+                <li>What if we can combine both hover and force? How should we
+                design</li>
+            </ul>
+
+
+            <h3 id="peer-reviewedjournalpapers">Peer-reviewed Journal
+            Papers</h3>
+
+
+            <h3 id="bookchapters">Book Chapters</h3>
+
+
+            <h3 id="postersanddemos">Posters and Demos</h3>
+
+
+            <h3 id="patents">Patents</h3>
+
+
+            <ul>
+                <li>What if we can combine both hover and force? How should we
+                design</li>
+
+
+                <li>What if we can combine both hover and force? How should we
+                design</li>
+
+
+                <li>What if we can combine both hover and force? How should we
+                design</li>
+
+
+                <li>What if we can combine both hover and force? How should we
+                design</li>
+
+
+                <li>What if we can combine both hover and force? How should we
+                design</li>
+
+
+                <li>What if we can combine both hover and force? How should we
+                design</li>
+
+
+                <li>What if we can combine both hover and force? How should we
+                design</li>
+
+
+                <li>What if we can combine both hover and force? How should we
+                design</li>
+
+
+                <li>What if we can combine both hover and force? How should we
+                design</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section class="content-section" id="fun">
+        <div class="container">
+            <h2>Bike and me</h2>
+            I love bike.
+        </div>
+    </section>
+
+
+    <div class="container">
+        Last update: Feb 20, 2016
     </div>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-  </body>
+    <script src="jquery.js">
+    </script> 
+    <script src="jquery.easing.min.js">
+    </script> 
+    <script src="scrolling-nav.js">
+    </script>
+</body>
 </html>
