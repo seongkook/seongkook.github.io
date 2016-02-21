@@ -126,143 +126,217 @@
             <h3 id="force-enrichedtouch">Force-enriched touch</h3>
 
 
-            <h4 class="project-title">Force Gestures</h4>
-
-
-            <p class="project-content">When we touch a real world object, physics counts. We automatically control force in multiple
-            directions. It creates tremendous different manipulations and expresses different nuance. What if a touch
-            screen can utilize multi-dimensional force with touch operation? In this project, we developed a normal-
-            and tangential-force sensing mobile touch device and showed the potential of combining touch with force
-            with application scenarios.</p>
-
-
-            <p class="project-content">Presented at UIST &#8217;11. <a href="">Paper</a> / <a href="">Video</a></p>
+            <p class="project-content">When we touch a surface, the touch makes the surface to move, differently by the
+            speed of the finger lands on the surface. <b>ForceTap</b> tried to detect this movement with an
+            accelerometer embedded on a mobile phone and use this to make a <i>tap</i> to a <i>strong tap</i> and a
+            <i>gentle tap</i>. While we're touching the surface, we can control the force, in <i>a normal and
+            tangential directions</i>. This is what we are used to do; we interact with physical objects with force,
+            sometimes make a dent on it and sometimes we examine its physical property. What if we can utilize these
+            force on a touch screen? That's how our <b>Force Gestures</b> came out. We built a device that can sense
+            both <i>normal and tangential force</i> with touch and explored the use of these rich input. Force is a
+            continuous property, so it has its richness by itself even only with a single-dimensional force: normal
+            force. In <b>ForceDrag</b>, with our force-senitive touch prototype, we showed two way of utilizing
+            <i>normal force</i> to work well with a touch screen: apply force to decide touch mode and drag without
+            force and simultaneously control force and touch to support continuous mode change. Tangential force has
+            richer information than normal force with its directional information. However, tangential force is
+            difficult to be measured at multiple locations on a touch surface since previous methods measure the
+            tangential force transferred through the surface. We thus developed a new method to <b>estimate tangential
+            force from the slight touch movement</b> made from the <i>finger deformation</i>, a result of the
+            combination of tangential force, friction, and elastic nature of our finger.</p>
 
 
             <h4 class="project-title">ForceTap</h4>
 
 
-            <p class="project-content">Force is a great modality that can enrich touch with continuous pressure level. But as of 2011, there
-            were almost no device with force-sensing capability except the BlackBerry Storm 2, which was unfortunately
-            not very successful. It is understandable since adding force sensors would result in the increased
-            manufacturing price and more complex structure. We came with a new idea of using an accelerometer, which
-            almost all modern mobile devices have, to detect a strong and gentle tap by measuring the device movement
-            made by a tap.</p>
+            <p class="project-content">SeongKook Heo and Geehyuk Lee, <strong>ForceTap: Extending Input Vocabulary of
+            Mobile Touch Screen by Adding Tap Gestures</strong>, MobileHCI 2011 <a href=
+            "http://dl.acm.org/citation.cfm?id=2037373.2037393">Paper</a> / <a href=
+            "https://www.youtube.com/watch?v=J-XXuRzaYrQ">Video</a></p>
 
 
-            <p class="project-content">Presented at MobileHCI &#8217;11. <a href="">Paper</a> / <a href="">Video</a></p>
+            <p class="project-content">Force is a great modality that can enrich touch with continuous pressure level.
+            But as of 2011, there were almost no device with force-sensing capability except the BlackBerry Storm 2,
+            which was unfortunately not very successful. It is understandable since adding force sensors would result
+            in the increased manufacturing price and more complex structure. We came with a new idea of using an
+            accelerometer, which almost all modern mobile devices have, to detect a strong and gentle tap by measuring
+            the device movement made by a tap.</p>
+
+
+            <h4 class="project-title">Force Gestures</h4>
+
+
+            <p class="project-content">SeongKook Heo and Geehyuk Lee, <strong>Force Gestures: Augmenting Touch Screen
+            Gestures with Normal and Tangential Forces</strong>, UIST 2011 <a href=
+            "http://dl.acm.org/citation.cfm?id=2047278">Paper</a> / <a href=
+            "https://www.youtube.com/watch?v=RZlq4TOjHi0">Video</a></p>
+
+
+            <p class="project-content">When we touch a real world object, physics counts. We automatically control
+            force in multiple directions. It creates tremendous different manipulations and expresses different nuance.
+            What if a touch screen can utilize multi-dimensional force with touch operation? In this project, we
+            developed a normal- and tangential-force sensing mobile touch device and showed the potential of combining
+            touch with force with application scenarios.</p>
 
 
             <h4 class="project-title">ForceDrag</h4>
 
 
-            <p class="project-content">We thought about using force for touch input modifier, like using modifier keys to make a mouse drag
-            work for a different function. During the process, we found that the friction makes the forceful movement
-            difficult to make (which is too obvious). So we proposed a new way, named &#8216;force lock&#8217; to
-            support light drag after selecting a mode with a different force level. We also discussed pros and cons of
-            using force lock compared to just using force as a modifier.</p>
+            <p class="project-content">SeongKook Heo and Geehyuk Lee, <strong>ForceDrag: Using Pressure as a Touch
+            Input Modifier</strong>, OZCHI 2012 <a href="http://dl.acm.org/citation.cfm?id=2414572">Paper</a> /
+            <a href="https://www.youtube.com/watch?v=u096tD1CJUo">Video</a></p>
 
 
-            <p class="project-content">Presented at OZCHI &#8217;12 <a href="">Paper</a> / <a href="">Video</a></p>
+            <p class="project-content">We thought about using force for touch input modifier, like using modifier keys
+            to make a mouse drag work for a different function. During the process, we found that the friction makes
+            the forceful movement difficult to make (which is too obvious). So we proposed a new way, named
+            &#8216;force lock&#8217; to support light drag after selecting a mode with a different force level. We also
+            discussed pros and cons of using force lock compared to just using force as a modifier.</p>
 
 
             <h4 class="project-title">Multi-touch Shear Interaction</h4>
 
 
-            <p class="project-content">Use of a tangential force has been introduced in 2011 as noted above. But think about how we interact
-            with objects and also touch surfaces. We use multiple fingers.</p>
+            <p class="project-content">SeongKook Heo and Geehyuk Lee, <strong>Indirect Shear Force Estimation for
+            Multi-Point Shear Force Operations</strong>, CHI 2013 <a href=
+            "http://dl.acm.org/citation.cfm?id=2470693">Paper</a> / <a href=
+            "https://www.youtube.com/watch?v=1B9BmsHLCEM">Video</a></p>
 
 
-            <p class="project-content">Presented at CHI &#8217;13. <a href="">Paper</a> / <a href="">Video</a></p>
+            <p class="project-content">Use of a tangential force has been introduced in 2011 as noted above. But think
+            about how we interact with objects and also touch surfaces. We use multiple fingers.</p>
 
 
             <h3 id="hover-enrichedtouch">Hover-enriched touch</h3>
 
 
+            <p class="project-content">I used the term <i>hover</i> here, but it's actually on what's happening on and
+            right above the touch surface. This is important and takes a very important role in the real world. Where
+            our finger came from, how its posture is like, or how fast it's movement all matters how it is used. We
+            built a hover-tracking touchpad, <strong>ThickPad</strong>, using infrared LEDs and Photo transistors and
+            putting a transparent and touch-sensitive conductive sheet on it. Thus, it can track finger position over
+            the surface and shape of fingers. After we tested its successful sensing capability, we built a larger
+            hover-tracking optical touchpad, which we named as <strong>LongPad</strong>, that can cover whole laptop
+            palmrest area. The area and shape-detection capability allowed us to block &gt;99% of accidental touches
+            made by the palm contact and to have rich interaction such as bimanual touch interactions. We further
+            explored the possibilities of using both hover and force information with various scenarios.
+            <strong>Pre-Touch</strong> explores the hover input space in a more sophisticated and holistic way, but
+            I'll describe about this later (after the publication).</p>
+
+
             <h4 class="project-title">ThickPad</h4>
 
 
-            <p class="project-content">This work was presented as a demonstration at UIST. This special optical touchpad has an array of
-            infrared LEDs and Photo Transistors and a touch-sensitive layer on it. Thus, it can measure hovering
-            finger. Not only where it is, but also how it is tilted / shaped.</p>
+            <p class="project-content">Sangwon Choi, Jaehyun Han, Sunjun Kim, Seongkook Heo, Geehyuk Lee,
+            <strong>ThickPad: A Hover-Tracking Touchpad for a Laptop</strong>, UIST 2011 Demo</p>
 
 
-            <p class="project-content">Presented at UIST '11 (Demo) <a href="paper%20link">Paper</a> | <a href="paper%20link">Video</a></p>
+            <p class="project-content">This work was presented as a demonstration at UIST. This special optical
+            touchpad has an array of infrared LEDs and Photo Transistors and a touch-sensitive layer on it. Thus, it
+            can measure hovering finger. Not only where it is, but also how it is tilted / shaped.</p>
 
 
             <h4 class="project-title">LongPad</h4>
 
 
-            <p class="project-content">We bulit a larger optical touchpad so that it can cover the whole palm rest area of a laptop.</p>
+            <p class="project-content">Jiseong Gu, SeongKook Heo, Jaehyun Han, Sunjun Kim, and Geehyuk Lee,
+            <strong>LongPad: A TouchPad Using the Whole Area below the Keyboard on a Laptop</strong>, CHI 2013</p>
 
 
-            <p class="project-content">Presented at CHI '13 <a href="paper%20link">Paper</a> | <a href="paper%20link">Video</a></p>
+            <p class="project-content">Presented at CHI '13 <a href="paper%20link">Paper</a> | <a href=
+            "paper%20link">Video</a></p>
 
 
             <h4 class="project-title">2.5D interaction</h4>
 
 
-            <p class="project-content">What if we can combine both hover and force? How should we design interaction for this rich input?</p>
+            <p class="project-content">Seongkook Heo, Jaehyun Han, Geehyuk Lee, <strong>Designing Rich Touch
+            Interaction through Proximity and 2.5D Force Sensing Touchpad</strong> OZCHI 2013</p>
 
 
-            <p class="project-content">Presented at OZCHI '13 <a href="paper%20link">Paper</a></p>
+            <p class="project-content">Seongkook Heo, Jaehyun Han, and Geehyuk Lee, <strong>Designing for Hover- and
+            Force-Enriched Touch Interaction</strong>, Computer-Human Interaction. Cognitive Effects of Spatial
+            Interaction, Learning, and Ability Lecture Notes in Computer Science Volume 8433</p>
 
 
-            <p class="project-content">Book Chapter <a href="paper%20link">Paper</a></p>
+            <p class="project-content">What if we can combine both hover and force? How should we design interaction
+            for this rich input?</p>
 
 
             <h4 class="project-title">PreTouch</h4>
 
 
-            <p class="project-content">This work is from my internship with Ken Hinckley at MSR during 2015 summer. Details to be described
-            later.</p>
+            <p class="project-content">Ken Hinckley, Seongkook Heo, Michel Pahud, Christian Holz, Hrvoje Benko, Abigail
+            Sellen, Richard Banks, Kenton O’Hara, Gavin Smyth, and William Buxton, <strong>Pre-Touch Sensing for Mobile
+            Interaction</strong>, CHI2016 (to appear)</p>
 
 
-            <p class="project-content">To be presented at CHI '16</p>
+            <p class="project-content">This work is from my internship with Ken Hinckley at MSR during 2015 summer.
+            Details to be described later.</p>
 
 
             <h3 id="gettingthemostoutoftouch">Getting the most out of touch</h3>
+            <p class="project-content">
+            Other than physical properties made while we are touching the surface, we also have a great control of making quick and accurate finger movements. We explored what our fingers can do better. However, sometimes, these are not enabled on touch input. <b>Consecutive distant taps</b> are fairly easy to perform with our fingers, but has not been used on touch input. We designed ways to utilize this new input for richer input vocabulary on mobile touch interface. 
+            
+            How about the precision of our fingers? It's known as a pretty inaccurate input, but in fact, people can even type on a tiny smartwatch. We developed <b>SplitBoard</b>, which splits the QWERTY keyboard in half of its size and use a flick gesture, which is not well utilzed for text entry (especially on small screens that make the drawing movement on a keyboard difficult), to switch between different part of the keyboard. 
+
+            </p>
 
 
             <h4 class="project-title">Consecutive Distant Taps</h4>
 
+            <p class="project-content">SeongKook Heo, Jiseong Gu, and Geehyuk Lee, <strong>Expanding Touch Input Vocabulary by Using Consecutive Distant Taps</strong>, CHI 2014 <a href="http://dl.acm.org/citation.cfm?id=2557234">Paper</a> | <a href="https://www.youtube.com/watch?v=Qydq5l2utKA">Video</a></p>
 
-            <p class="project-content">Tapping on the same point twice is a common operation known as double tap, but tapping on distant points in sequence is underutilized. We explore the potential uses of consecutive distant tap operations.</p>
+            <p class="project-content">Tapping on the same point twice is a common operation known as double tap, but
+            tapping on distant points in sequence is underutilized. We explore the potential uses of consecutive
+            distant tap operations.</p>
 
-
-            <p class="project-content">Presented at CHI '14 <a href="paper%20link">Paper</a> | <a href="paper%20link">Video</a></p>
 
 
             <h4 class="project-title">SplitBoard</h4>
 
 
-            <p class="project-content">SplitBoard is a new soft keyboard designed for a smartwatch. As the user flicks left or right on the keyboard, it switches between the left and right halves of a QWERTY keyboard. The SplitBoard is expected to be a viable option for smartwatch text entry because of its light processing requirements, good performance, and immediate learnability.
-            </p>
+            <p class="project-content">Jonggi Hong, Seongkook Heo, Poika Isokoski, and Geehyuk Lee, <strong>SplitBoard: A Simple Split Soft Keyboard for Wristwatch-sized Touch Screens</strong>,CHI 2015
+            <a href="http://dl.acm.org/citation.cfm?id=2702273">Paper</a> | <a href="https://www.youtube.com/watch?v=VE42fxNJZrk">Video</a></p>
 
-            <p class="project-content">Presented at CHI '15 <a href="paper%20link">Paper</a> | <a href="paper%20link">Video</a></p>
+
+            <p class="project-content">SplitBoard is a new soft keyboard designed for a smartwatch. As the user flicks
+            left or right on the keyboard, it switches between the left and right halves of a QWERTY keyboard. The
+            SplitBoard is expected to be a viable option for smartwatch text entry because of its light processing
+            requirements, good performance, and immediate learnability.</p>
 
 
             <h3 id="sensing6dof">Sensing 6DOF</h3>
-
+            <p class="project-content">6DOF, which describes a combination of both 3D position and 3D posture information, sensing devices have been used since very early days of computing history. With 6DOF sensing, we can understand where an object is located and how it is tilted. However, 6DOF sensing devices are expensive and require large tracking object. Through a collaborative project with Samsung Electronics, we built a new method to measure 6DOF of a tracker using only cheap and off-the-shelf parts: infrared LEDs and photodiodes. Our projects, <b>IrCube</b> and <b>IrPen</b> describes how this method works and how we can utilize this for various use scenarios. </p>
 
             <h4 class="project-title">IrCube</h4>
+            <p class="project-content">Seongkook Heo, Jaehyun Han, Sangwon Choi, Seunghwan Lee, Geehyuk Lee, Hyong-Euk Lee, SangHyun Kim, Won-Chul Bang, DoKyoon Kim, and ChangYeong Kim, <strong>IrCube Tracker: An Optical 6-DOF Tracker based on LED Directivity</strong>, UIST '11 <a href="http://dl.acm.org/citation.cfm?id=2047272">Paper</a> | <a href="https://www.youtube.com/watch?v=-se-cPXvPVY">Video</a></p>
+            <p class="project-content">Jaehyun Han, Seongkook Heo, Geehyuk Lee, Won-Chul Bang, DoKyoon Kim, and ChangYeong Kim,
+            <strong>6-DOF tracker using LED directivity</strong>, Electronics Letters, 47(3):177-178, 2011 <a href="http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=5710053">Paper</a>
 
 
-            <p class="project-content">We designed an optical 6-DOF tracker where a few photo-sensors can track the position and orientation of an LED cluster. The operating principle of the tracker is basically source localization by solving an inverse problem. We further implemented a smaller version of IrCube sensors and explored the use of 6-DOF stylus on touch tablets.
-            </p>
-
-
-            <p class="project-content">Presented at UIST '11 <a href="paper%20link">Paper</a> | <a href="paper%20link">Video</a></p>
-
+            <p class="project-content">We designed an optical 6-DOF tracker where a few photo-sensors can track the
+            position and orientation of an LED cluster. The operating principle of the tracker is basically source
+            localization by solving an inverse problem. We further implemented a smaller version of IrCube sensors and
+            explored the use of 6-DOF stylus on touch tablets.</p>
 
             <h4 class="project-title">IrPen</h4>
+            <p class="project-content">Jaehyun Han, Seongkook Heo, Hyong-Euk Lee, and Geehyuk Lee, <strong>
+IrPen: A 6-DOF Pen System to Support Over-the-surface Interactions with Tablet Computers,</strong>
+IEEE Computer Graphics and Applications, 34(3)
+ <a href="http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=6813983">Paper</a> | <a href=
+            "https://www.youtube.com/watch?v=AvhKnDu4rLg">Video</a></p>
 
 
-            <p class="project-content">Researchers have proposed various techniques for over-the-surface interaction using pens. However, current pen systems can't properly support these techniques because of their limited tracking abilities. The IrPen, an extension of the IrCube tracker, is a six-degree-of-freedom pen system that properly supports over-the-surface interaction on tablet computers. Besides incorporating the tracker's basic operating principles, the IrPen takes into account tablet-specific requirements. It employs a sensor small enough for tablets, and the pen structure minimizes issues caused by reflections from a tablet surface. The design also addresses issues related to occlusion and ambient lighting.
-            </p>
+            <p class="project-content">Researchers have proposed various techniques for over-the-surface interaction
+            using pens. However, current pen systems can't properly support these techniques because of their limited
+            tracking abilities. The IrPen, an extension of the IrCube tracker, is a six-degree-of-freedom pen system
+            that properly supports over-the-surface interaction on tablet computers. Besides incorporating the
+            tracker's basic operating principles, the IrPen takes into account tablet-specific requirements. It employs
+            a sensor small enough for tablets, and the pen structure minimizes issues caused by reflections from a
+            tablet surface. The design also addresses issues related to occlusion and ambient lighting.</p>
 
 
-            <p class="project-content">Published at CG&amp;A <a href="paper%20link">Paper</a> | <a href="paper%20link">Video</a></p>
 
 
             <h3 id="others">Understanding people</h3>
@@ -271,9 +345,9 @@
             <h4 class="project-title">Snapping</h4>
 
 
-            <p class="project-content">Results from previous research, we assumed using the centroid, rather than the bounding box center,
-            would provide a better way to help users with aligning objects. Through a user study, we examined the
-            position of a center perceived by a user when aligning objects.</p>
+            <p class="project-content">Results from previous research, we assumed using the centroid, rather than the
+            bounding box center, would provide a better way to help users with aligning objects. Through a user study,
+            we examined the position of a center perceived by a user when aligning objects.</p>
 
 
             <p class="project-content">Presented at CHI '12 (WIP) <a href="paper%20link">Paper</a></p>
@@ -282,12 +356,12 @@
             <h4 class="project-title">Mining social relationship</h4>
 
 
-            <p class="project-content">Our goal is to show that it is possible to automatically infer social relationship types among people
-            who stay together in an organization by analyzing communication patterns. We collected indoor co-location
-            data and instant messenger data from 22 participants for one month. Based on the data, we designed and
-            explored several indicators which are considered to be useful for mining social relationship types. We
-            applied machine learning techniques using the indicators and found that it is possible to develop an
-            intelligent method to infer social relationship types.</p>
+            <p class="project-content">Our goal is to show that it is possible to automatically infer social
+            relationship types among people who stay together in an organization by analyzing communication patterns.
+            We collected indoor co-location data and instant messenger data from 22 participants for one month. Based
+            on the data, we designed and explored several indicators which are considered to be useful for mining
+            social relationship types. We applied machine learning techniques using the indicators and found that it is
+            possible to develop an intelligent method to infer social relationship types.</p>
 
 
             <p class="project-content">Presented at CSCW '13 <a href="paper%20link">Paper</a></p>
@@ -296,17 +370,14 @@
             <h4 class="project-title">Participatory design</h4>
 
 
-            <p class="project-content">We proposed a novel design
-            method called Formula One, which supports quick and easy
-            development of interactive prototype by using the video call
-            functionalities of consumer smart mobile appliances. The
-            Formula One method consists of two-stages, which are Pit
-            Stop and Drive that a user and designers design and modify
-            a prototype and test it, respectively. </p>
+            <p class="project-content">We proposed a novel design method called Formula One, which supports quick and
+            easy development of interactive prototype by using the video call functionalities of consumer smart mobile
+            appliances. The Formula One method consists of two-stages, which are Pit Stop and Drive that a user and
+            designers design and modify a prototype and test it, respectively.</p>
 
 
-            <p class="project-content">Presented at HCI Korea 2016 (Received best paper award) <a href="paper%20link">Paper</a> | <a href=
-            "paper%20link">Video</a></p>
+            <p class="project-content">Presented at HCI Korea 2016 (Received best paper award) <a href=
+            "paper%20link">Paper</a> | <a href="paper%20link">Video</a></p>
         </div>
     </section>
 
@@ -411,11 +482,16 @@
 
 
             <h3 id="postersanddemos">Posters and Demos</h3>
+
+
             <ul>
                 <li>To be updated</li>
             </ul>
 
+
             <h3 id="patents">Patents</h3>
+
+
             <ul>
                 <li>To be updated</li>
             </ul>
@@ -439,7 +515,7 @@
     <script src="js/jquery.easing.min.js">
     </script> 
     <script src="js/scrolling-nav.js">
-    </script>
+    </script> 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
