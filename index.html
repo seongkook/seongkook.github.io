@@ -88,15 +88,16 @@
 
 
             <p>I always have been a geek, and it is exciting to see the technologies that I&#8217;ve seen in books and
-            movies are becoming real. Now computers are everywhere, and even tiny computers like the ones on our
-            wrist are powerful enough to run various apps and connected to the internet. However, I think computers are
-            still not paying enough attention to us when we interact with them, like what we wanted to do or what we can do, so that we have to put much effort to let them work for us. I am enthusiastic about making these
-            &#8216;rude&#8217; computers more sensitive to us so that we can benefit the mighty power of
-            computers better.</p>
+            movies are becoming real. Now computers are everywhere, and even tiny computers like the ones on our wrist
+            are powerful enough to run various apps and connected to the internet. However, I think computers are still
+            not paying enough attention to us when we interact with them, like what we wanted to do or what we can do,
+            so that we have to put much effort to let them work for us. I am enthusiastic about making these
+            &#8216;rude&#8217; computers more sensitive to us so that we can benefit the mighty power of computers
+            better.</p>
 
 
             <p>What I love: thinking and building new idea, solving problems, things that are beautiful, either
-            aesthetically, logically, or mechanically, or something with a brilliant idea. And a bike. </p>
+            aesthetically, logically, or mechanically, or something with a brilliant idea. And a bike.</p>
 
 
             <p><a href="mailto:seongkook@kaist.ac.kr"><strong>Email</strong></a> | <a href=
@@ -114,86 +115,95 @@
 
             <p>Our natural touch is rich and nuanced with full of physical properties such as force and posture
             implying our intentions. Touch interfaces, however, ignore this rich information and only consider whether
-            our finger is in contact with a screen and the contact location. Here I describe the approaches my colleagues and I made to enhance the impoverished touch interaction, for instance by using additional modalities like force or hover, or by exploiting underutilized touch gestures.</p>
+            our finger is in contact with a screen and the contact location. Here I describe the approaches my
+            colleagues and I made to enhance the impoverished touch interaction, for instance by using additional
+            modalities like force or hover, or by exploiting underutilized touch gestures.</p>
 
 
             <h3 id="force-enrichedtouch">Force-enriched touch</h3>
 
 
-            <p class="project-content">When we tap a physical object, the tap slightly moves the the object. <b>ForceTap</b> tried to detect this movement with an
-            accelerometer embedded on a mobile phone and use this to make a <i>tap</i> to a <i>strong tap</i> and a
-            <i>gentle tap</i>. While we're touching the surface, we can control the force, in <i>a normal and
-            tangential directions</i>. This is what we are used to; we interact with physical objects with force,
-            sometimes make a dent on it and sometimes we examine its physical property. What if we can utilize these
-            force on a touch screen? That's how our <b>Force Gestures</b> came out. We built a device that can sense
-            both <i>normal and tangential force</i> with touch and explored the use of this rich input. Force is a
-            continuous property, so it has its richness by itself even only with a single-dimensional force: normal
-            force. In <b>ForceDrag</b>, with our force-sensitive touch prototype, we showed two way of utilizing
-            <i>normal force</i> to work well with a touch screen: apply force to decide touch mode and drag without
-            force and simultaneously control force and touch to support continuous mode changes. The tangential force has
-            richer information than the normal force with its directional information. However, it is difficult to measure 
-            tangential force of multiple touch contacts since previous methods measure the 
-            tangential force transferred via a rigid surface. We thus developed a new method to <b>estimate tangential
-            force from the slight touch movement</b> made from the <i>finger deformation</i>, a result of the
-            combination of tangential force, friction, and elastic nature of our finger.</p>
+            <p class="project-content">When we tap a physical object, the tap slightly moves the the object.
+            <b>ForceTap</b> tried to detect this movement with an accelerometer embedded on a mobile phone and use this
+            to make a <i>tap</i> to a <i>strong tap</i> and a <i>gentle tap</i>. While we're touching the surface, we
+            can control the force, in <i>a normal and tangential directions</i>. This is what we are used to; we
+            interact with physical objects with force, sometimes make a dent on it and sometimes we examine its
+            physical property. What if we can utilize these force on a touch screen? That's how our <b>Force
+            Gestures</b> came out. We built a device that can sense both <i>normal and tangential force</i> with touch
+            and explored the use of this rich input. Force is a continuous property, so it has its richness by itself
+            even only with a single-dimensional force: normal force. In <b>ForceDrag</b>, with our force-sensitive
+            touch prototype, we showed two way of utilizing <i>normal force</i> to work well with a touch screen: apply
+            force to decide touch mode and drag without force and simultaneously control force and touch to support
+            continuous mode changes. The tangential force has richer information than the normal force with its
+            directional information. However, it is difficult to measure tangential force of multiple touch contacts
+            since previous methods measure the tangential force transferred via a rigid surface. We thus developed a
+            new method to <b>estimate tangential force from the slight touch movement</b> made from the <i>finger
+            deformation</i>, a result of the combination of tangential force, friction, and elastic nature of our
+            finger.</p>
+
 
             <div class="media project-content">
-              <div class="media-left">
-                <a href="#">
-                  <img class="media-object img-rounded" src="images/forcetap.jpg" width="120" alt="...">
-                </a>
-              </div>
-              <div class="media-body">
-                <h4 class="media-heading">ForceTap</h4>
-            SeongKook Heo and Geehyuk Lee, <strong>ForceTap: Extending Input Vocabulary of Mobile Touch Screen by Adding Tap Gestures</strong>, MobileHCI 2011 <a href=
-            "http://dl.acm.org/citation.cfm?id=2037373.2037393">Paper</a> / <a href=
-            "https://www.youtube.com/watch?v=J-XXuRzaYrQ">Video</a>
-              </div>
-            </div>
+                <div class="media-left">
+                    <a href="#"><img alt="..." class="media-object img-rounded" src="images/forcetap.jpg" width=
+                    "120"></a>
+                </div>
 
-            <div class="media project-content">
-              <div class="media-left">
-                <a href="#">
-                  <img class="media-object img-rounded" src="images/forceGestures.png" width="120" alt="...">
-                </a>
-              </div>
-              <div class="media-body">
-                <h4 class="media-heading">Force Gestures</h4>
-                SeongKook Heo and Geehyuk Lee, <strong>Force Gestures: Augmenting Touch Screen
-            Gestures with Normal and Tangential Forces</strong>, UIST 2011 <a href=
-            "http://dl.acm.org/citation.cfm?id=2047278">Paper</a> / <a href=
-            "https://www.youtube.com/watch?v=RZlq4TOjHi0">Video</a>
-              </div>
-            </div>
 
-            <div class="media project-content">
-              <div class="media-left">
-                <a href="#">
-                  <img class="media-object img-rounded" src="images/forcedrag.jpg" width="120" alt="...">
-                </a>
-              </div>
-              <div class="media-body">
-                <h4 class="media-heading">ForceDrag</h4>
-            SeongKook Heo and Geehyuk Lee, <strong>ForceDrag: Using Pressure as a Touch
-            Input Modifier</strong>, OZCHI 2012 <a href="http://dl.acm.org/citation.cfm?id=2414572">Paper</a> /
-            <a href="https://www.youtube.com/watch?v=u096tD1CJUo">Video</a>
-              </div>
+                <div class="media-body">
+                    <h4 class="media-heading">ForceTap</h4>
+                    SeongKook Heo and Geehyuk Lee, <strong>ForceTap: Extending Input Vocabulary of Mobile Touch Screen
+                    by Adding Tap Gestures</strong>, MobileHCI 2011 <a href=
+                    "http://dl.acm.org/citation.cfm?id=2037373.2037393">Paper</a> / <a href=
+                    "https://www.youtube.com/watch?v=J-XXuRzaYrQ">Video</a>
+                </div>
             </div>
 
 
             <div class="media project-content">
-              <div class="media-left">
-                <a href="#">
-                  <img class="media-object img-rounded" src="images/shear.jpg" width="120" alt="...">
-                </a>
-              </div>
-              <div class="media-body">
-                <h4 class="media-heading">Multi-point Shear Force Estimation</h4>
-            SeongKook Heo and Geehyuk Lee, <strong>Indirect Shear Force Estimation for
-            Multi-Point Shear Force Operations</strong>, CHI 2013 <a href=
-            "http://dl.acm.org/citation.cfm?id=2470693">Paper</a> / <a href=
-            "https://www.youtube.com/watch?v=1B9BmsHLCEM">Video</a>
-              </div>
+                <div class="media-left">
+                    <a href="#"><img alt="..." class="media-object img-rounded" src="images/forceGestures.png" width=
+                    "120"></a>
+                </div>
+
+
+                <div class="media-body">
+                    <h4 class="media-heading">Force Gestures</h4>
+                    SeongKook Heo and Geehyuk Lee, <strong>Force Gestures: Augmenting Touch Screen Gestures with Normal
+                    and Tangential Forces</strong>, UIST 2011 <a href=
+                    "http://dl.acm.org/citation.cfm?id=2047278">Paper</a> / <a href=
+                    "https://www.youtube.com/watch?v=RZlq4TOjHi0">Video</a>
+                </div>
+            </div>
+
+
+            <div class="media project-content">
+                <div class="media-left">
+                    <a href="#"><img alt="..." class="media-object img-rounded" src="images/forcedrag.jpg" width=
+                    "120"></a>
+                </div>
+
+
+                <div class="media-body">
+                    <h4 class="media-heading">ForceDrag</h4>
+                    SeongKook Heo and Geehyuk Lee, <strong>ForceDrag: Using Pressure as a Touch Input
+                    Modifier</strong>, OZCHI 2012 <a href="http://dl.acm.org/citation.cfm?id=2414572">Paper</a> /
+                    <a href="https://www.youtube.com/watch?v=u096tD1CJUo">Video</a>
+                </div>
+            </div>
+
+
+            <div class="media project-content">
+                <div class="media-left">
+                    <a href="#"><img alt="..." class="media-object img-rounded" src="images/shear.jpg" width="120"></a>
+                </div>
+
+
+                <div class="media-body">
+                    <h4 class="media-heading">Multi-point Shear Force Estimation</h4>
+                    SeongKook Heo and Geehyuk Lee, <strong>Indirect Shear Force Estimation for Multi-Point Shear Force
+                    Operations</strong>, CHI 2013 <a href="http://dl.acm.org/citation.cfm?id=2470693">Paper</a> /
+                    <a href="https://www.youtube.com/watch?v=1B9BmsHLCEM">Video</a>
+                </div>
             </div>
 
 
@@ -206,205 +216,259 @@
             built a hover-tracking touchpad, <strong>ThickPad</strong>, using infrared LEDs and Phototransistors and
             putting a transparent and touch-sensitive conductive sheet on it. Thus, it can track finger position over
             the surface and shape of fingers. After we tested its successful sensing capability, we built a larger
-            hover-tracking optical touchpad, which we named as <strong>LongPad</strong>, that can cover the whole laptop
-            palm rest area. The area and shape-detection capability allowed us to block &gt;99% of accidental touches
-            made by the palm contact and to have rich interaction such as bimanual touch interactions. We further
-            explored the possibilities of using both hover and force information with various scenarios.
+            hover-tracking optical touchpad, which we named as <strong>LongPad</strong>, that can cover the whole
+            laptop palm rest area. The area and shape-detection capability allowed us to block &gt;99% of accidental
+            touches made by the palm contact and to have rich interaction such as bimanual touch interactions. We
+            further explored the possibilities of using both hover and force information with various scenarios.
             <strong>Pre-Touch</strong> explores the hover input space in a more sophisticated and holistic way, but
             I'll describe this later (after the publication).</p>
 
-            <div class="media project-content">
-              <div class="media-left">
-                <a href="#">
-                  <img class="media-object img-rounded" src="images/thickpad.jpg" width="120" alt="...">
-                </a>
-              </div>
-              <div class="media-body">
-                <h4 class="media-heading">ThickPad</h4>
-            Sangwon Choi, Jaehyun Han, Sunjun Kim, Seongkook Heo, Geehyuk Lee,
-            <strong>ThickPad: A Hover-Tracking Touchpad for a Laptop</strong>, UIST 2011 Demo
-                         <a href="http://dl.acm.org/citation.cfm?id=2046405">Paper</a>
-              </div>
-            </div>
-
 
             <div class="media project-content">
-              <div class="media-left">
-                <a href="#">
-                  <img class="media-object img-rounded" src="images/longpad.jpg" width="120" alt="...">
-                </a>
-              </div>
-              <div class="media-body">
-                <h4 class="media-heading">LongPad</h4>
-            Jiseong Gu, SeongKook Heo, Jaehyun Han, Sunjun Kim, and Geehyuk Lee,
-            <strong>LongPad: A TouchPad Using the Whole Area below the Keyboard on a Laptop</strong>, CHI 2013
-            <a href="http://dl.acm.org/citation.cfm?id=2466188">Paper</a> | <a href="https://www.youtube.com/watch?v=9zNOSGkWDfg">Video</a>
-              </div>
+                <div class="media-left">
+                    <a href="#"><img alt="..." class="media-object img-rounded" src="images/thickpad.jpg" width=
+                    "120"></a>
+                </div>
+
+
+                <div class="media-body">
+                    <h4 class="media-heading">ThickPad</h4>
+                    Sangwon Choi, Jaehyun Han, Sunjun Kim, Seongkook Heo, Geehyuk Lee, <strong>ThickPad: A
+                    Hover-Tracking Touchpad for a Laptop</strong>, UIST 2011 Demo <a href=
+                    "http://dl.acm.org/citation.cfm?id=2046405">Paper</a>
+                </div>
             </div>
 
 
-                        <div class="media project-content">
-              <div class="media-left">
-                <a href="#">
-                  <img class="media-object img-rounded" src="images/screenpad.jpg" width="120" alt="...">
-                </a>
-              </div>
-              <div class="media-body">
-                <h4 class="media-heading">Hover + Force Interaction</h4>
-                <p>
-            Seongkook Heo, Jaehyun Han, Geehyuk Lee, <strong>Designing Rich Touch
-            Interaction through Proximity and 2.5D Force Sensing Touchpad</strong> OZCHI 2013
-            <a href="http://dl.acm.org/citation.cfm?id=2541057">Paper</a></p>
+            <div class="media project-content">
+                <div class="media-left">
+                    <a href="#"><img alt="..." class="media-object img-rounded" src="images/longpad.jpg" width=
+                    "120"></a>
+                </div>
 
-            <p>Seongkook Heo, Jaehyun Han, and Geehyuk Lee, <strong>Designing for Hover- and
-            Force-Enriched Touch Interaction</strong>, Computer-Human Interaction. Cognitive Effects of Spatial
-            Interaction, Learning, and Ability Lecture Notes in Computer Science Volume 8433
-            <a href="http://link.springer.com/chapter/10.1007%2F978-3-319-16940-8_4">Paper</a></p>
-              </div>
+
+                <div class="media-body">
+                    <h4 class="media-heading">LongPad</h4>
+                    Jiseong Gu, SeongKook Heo, Jaehyun Han, Sunjun Kim, and Geehyuk Lee, <strong>LongPad: A TouchPad
+                    Using the Whole Area below the Keyboard on a Laptop</strong>, CHI 2013 <a href=
+                    "http://dl.acm.org/citation.cfm?id=2466188">Paper</a> | <a href=
+                    "https://www.youtube.com/watch?v=9zNOSGkWDfg">Video</a>
+                </div>
             </div>
 
 
+            <div class="media project-content">
+                <div class="media-left">
+                    <a href="#"><img alt="..." class="media-object img-rounded" src="images/screenpad.jpg" width=
+                    "120"></a>
+                </div>
 
-                        <div class="media project-content">
-              <div class="media-left">
-                <a href="#">
-                  <img class="media-object img-rounded" src="images/blank.png" width="120" alt="...">
-                </a>
-              </div>
-              <div class="media-body">
-                <h4 class="media-heading">Pre-Touch</h4>
-                <p>
-            Ken Hinckley, Seongkook Heo, Michel Pahud, Christian Holz, Hrvoje Benko, Abigail
-            Sellen, Richard Banks, Kenton O’Hara, Gavin Smyth, and William Buxton, <strong>Pre-Touch Sensing for Mobile
-            Interaction</strong>, CHI2016 (to appear)</p>
-              </div>
+
+                <div class="media-body">
+                    <h4 class="media-heading">Hover + Force Interaction</h4>
+
+
+                    <p>Seongkook Heo, Jaehyun Han, Geehyuk Lee, <strong>Designing Rich Touch Interaction through
+                    Proximity and 2.5D Force Sensing Touchpad</strong> OZCHI 2013 <a href=
+                    "http://dl.acm.org/citation.cfm?id=2541057">Paper</a></p>
+
+
+                    <p>Seongkook Heo, Jaehyun Han, and Geehyuk Lee, <strong>Designing for Hover- and Force-Enriched
+                    Touch Interaction</strong>, Computer-Human Interaction. Cognitive Effects of Spatial Interaction,
+                    Learning, and Ability Lecture Notes in Computer Science Volume 8433 <a href=
+                    "http://link.springer.com/chapter/10.1007%2F978-3-319-16940-8_4">Paper</a></p>
+                </div>
             </div>
 
+
+            <div class="media project-content">
+                <div class="media-left">
+                    <a href="#"><img alt="..." class="media-object img-rounded" src="images/blank.png" width="120"></a>
+                </div>
+
+
+                <div class="media-body">
+                    <h4 class="media-heading">Pre-Touch</h4>
+
+
+                    <p>Ken Hinckley, Seongkook Heo, Michel Pahud, Christian Holz, Hrvoje Benko, Abigail Sellen, Richard
+                    Banks, Kenton O’Hara, Gavin Smyth, and William Buxton, <strong>Pre-Touch Sensing for Mobile
+                    Interaction</strong>, CHI2016 (to appear)</p>
+                </div>
+            </div>
 
 
             <h3 id="gettingthemostoutoftouch">Getting the most out of touch</h3>
-            <p class="project-content">
-            Other than physical properties made while we are touching the surface, we also have a great control of making quick and accurate finger movements. We explored what our fingers can do better. However, sometimes, these are not enabled on touch input. <b>Consecutive distant taps</b> are fairly easy to perform with our fingers but has not been used for touch input. We designed ways to utilize this new input for richer input vocabulary on a mobile touch interface. 
-            
-            How about the precision of our fingers? It's known as a pretty inaccurate input, but in fact, people can even type on a tiny smartwatch. We developed <b>SplitBoard</b>, which splits the QWERTY keyboard in half of its size and uses a flick gesture, which is not well utilized for text entry (especially on small screens that make the drawing movement on a keyboard difficult), to switch between different part of the keyboard. 
-
-            </p>
 
 
+            <p class="project-content">Other than physical properties made while we are touching the surface, we also
+            have a great control of making quick and accurate finger movements. We explored what our fingers can do
+            better. However, sometimes, these are not enabled on touch input. <b>Consecutive distant taps</b> are
+            fairly easy to perform with our fingers but has not been used for touch input. We designed ways to utilize
+            this new input for richer input vocabulary on a mobile touch interface. How about the precision of our
+            fingers? It's known as a pretty inaccurate input, but in fact, people can even type on a tiny smartwatch.
+            We developed <b>SplitBoard</b>, which splits the QWERTY keyboard in half of its size and uses a flick
+            gesture, which is not well utilized for text entry (especially on small screens that make the drawing
+            movement on a keyboard difficult), to switch between different part of the keyboard.</p>
 
-                        <div class="media project-content">
-              <div class="media-left">
-                <a href="#">
-                  <img class="media-object img-rounded" src="images/tatatap.png" width="120" alt="...">
-                </a>
-              </div>
-              <div class="media-body">
-                <h4 class="media-heading">Consecutive Distant Taps</h4>
-                <p>
-SeongKook Heo, Jiseong Gu, and Geehyuk Lee, <strong>Expanding Touch Input Vocabulary by Using Consecutive Distant Taps</strong>, CHI 2014 <a href="http://dl.acm.org/citation.cfm?id=2557234">Paper</a> | <a href="https://www.youtube.com/watch?v=Qydq5l2utKA">Video</a></p>
-              </div>
+
+            <div class="media project-content">
+                <div class="media-left">
+                    <a href="#"><img alt="..." class="media-object img-rounded" src="images/tatatap.png" width=
+                    "120"></a>
+                </div>
+
+
+                <div class="media-body">
+                    <h4 class="media-heading">Consecutive Distant Taps</h4>
+
+
+                    <p>SeongKook Heo, Jiseong Gu, and Geehyuk Lee, <strong>Expanding Touch Input Vocabulary by Using
+                    Consecutive Distant Taps</strong>, CHI 2014 <a href=
+                    "http://dl.acm.org/citation.cfm?id=2557234">Paper</a> | <a href=
+                    "https://www.youtube.com/watch?v=Qydq5l2utKA">Video</a></p>
+                </div>
             </div>
 
 
-                        <div class="media project-content">
-              <div class="media-left">
-                <a href="#">
-                  <img class="media-object img-rounded" src="images/splitboard.jpg" width="120" alt="...">
-                </a>
-              </div>
-              <div class="media-body">
-                <h4 class="media-heading">SplitBoard</h4>
-                <p>
-Jonggi Hong, Seongkook Heo, Poika Isokoski, and Geehyuk Lee, <strong>SplitBoard: A Simple Split Soft Keyboard for Wristwatch-sized Touch Screens</strong>, CHI 2015
-            <a href="http://dl.acm.org/citation.cfm?id=2702273">Paper</a> | <a href="https://www.youtube.com/watch?v=VE42fxNJZrk">Video</a></p>
-              </div>
+            <div class="media project-content">
+                <div class="media-left">
+                    <a href="#"><img alt="..." class="media-object img-rounded" src="images/splitboard.jpg" width=
+                    "120"></a>
+                </div>
+
+
+                <div class="media-body">
+                    <h4 class="media-heading">SplitBoard</h4>
+
+
+                    <p>Jonggi Hong, Seongkook Heo, Poika Isokoski, and Geehyuk Lee, <strong>SplitBoard: A Simple Split
+                    Soft Keyboard for Wristwatch-sized Touch Screens</strong>, CHI 2015 <a href=
+                    "http://dl.acm.org/citation.cfm?id=2702273">Paper</a> | <a href=
+                    "https://www.youtube.com/watch?v=VE42fxNJZrk">Video</a></p>
+                </div>
             </div>
 
 
             <h3 id="sensing6dof">Sensing 6DOF</h3>
-            <p class="project-content">6DOF, which describes a combination of both 3D position and 3D posture information, sensing devices have been used since very early days of computing history. With 6DOF sensing, we can understand where an object is located and how it is tilted. However, 6DOF sensing devices are expensive and require large tracking object. Through a collaborative project with Samsung Electronics, we built a new method to measure 6DOF of a tracker using only cheap and off-the-shelf parts: infrared LEDs and photodiodes. <b>IrCube</b> and <b>IrPen</b> describe how this method works and how we can utilize this for various use scenarios. </p>
 
 
-                        <div class="media project-content">
-              <div class="media-left">
-                <a href="#">
-                  <img class="media-object img-rounded" src="images/ircube.jpg" width="120" alt="...">
-                </a>
-              </div>
-              <div class="media-body">
-                <h4 class="media-heading">IrCube</h4>
-                <p>
-Seongkook Heo, Jaehyun Han, Sangwon Choi, Seunghwan Lee, Geehyuk Lee, Hyong-Euk Lee, SangHyun Kim, Won-Chul Bang, DoKyoon Kim, and ChangYeong Kim, <strong>IrCube Tracker: An Optical 6-DOF Tracker based on LED Directivity</strong>, UIST '11 <a href="http://dl.acm.org/citation.cfm?id=2047272">Paper</a> | <a href="https://www.youtube.com/watch?v=-se-cPXvPVY">Video</a></p>
-<p>Jaehyun Han, Seongkook Heo, Geehyuk Lee, Won-Chul Bang, DoKyoon Kim, and ChangYeong Kim,
-            <strong>6-DOF tracker using LED directivity</strong>, Electronics Letters, 47(3):177-178, 2011 <a href="http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=5710053">Paper</a></p>
-              </div>
+            <p class="project-content">6DOF, which describes a combination of both 3D position and 3D posture
+            information, sensing devices have been used since very early days of computing history. With 6DOF sensing,
+            we can understand where an object is located and how it is tilted. However, 6DOF sensing devices are
+            expensive and require large tracking object. Through a collaborative project with Samsung Electronics, we
+            built a new method to measure 6DOF of a tracker using only cheap and off-the-shelf parts: infrared LEDs and
+            photodiodes. <b>IrCube</b> and <b>IrPen</b> describe how this method works and how we can utilize this for
+            various use scenarios.</p>
+
+
+            <div class="media project-content">
+                <div class="media-left">
+                    <a href="#"><img alt="..." class="media-object img-rounded" src="images/ircube.jpg" width=
+                    "120"></a>
+                </div>
+
+
+                <div class="media-body">
+                    <h4 class="media-heading">IrCube</h4>
+
+
+                    <p>Seongkook Heo, Jaehyun Han, Sangwon Choi, Seunghwan Lee, Geehyuk Lee, Hyong-Euk Lee, SangHyun
+                    Kim, Won-Chul Bang, DoKyoon Kim, and ChangYeong Kim, <strong>IrCube Tracker: An Optical 6-DOF
+                    Tracker based on LED Directivity</strong>, UIST '11 <a href=
+                    "http://dl.acm.org/citation.cfm?id=2047272">Paper</a> | <a href=
+                    "https://www.youtube.com/watch?v=-se-cPXvPVY">Video</a></p>
+
+
+                    <p>Jaehyun Han, Seongkook Heo, Geehyuk Lee, Won-Chul Bang, DoKyoon Kim, and ChangYeong Kim,
+                    <strong>6-DOF tracker using LED directivity</strong>, Electronics Letters, 47(3):177-178, 2011
+                    <a href="http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=5710053">Paper</a></p>
+                </div>
             </div>
 
 
-                        <div class="media project-content">
-              <div class="media-left">
-                <a href="#">
-                  <img class="media-object img-rounded" src="images/irpen.jpg" width="120" alt="...">
-                </a>
-              </div>
-              <div class="media-body">
-                <h4 class="media-heading">IrPen</h4>
-                <p>
-Jaehyun Han, Seongkook Heo, Hyong-Euk Lee, and Geehyuk Lee, <strong>
-IrPen: A 6-DOF Pen System to Support Over-the-surface Interactions with Tablet Computers,</strong>
-IEEE Computer Graphics and Applications, 34(3)
- <a href="http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=6813983">Paper</a> | <a href=
-            "https://www.youtube.com/watch?v=AvhKnDu4rLg">Video</a></p>
-              </div>
+            <div class="media project-content">
+                <div class="media-left">
+                    <a href="#"><img alt="..." class="media-object img-rounded" src="images/irpen.jpg" width="120"></a>
+                </div>
+
+
+                <div class="media-body">
+                    <h4 class="media-heading">IrPen</h4>
+
+
+                    <p>Jaehyun Han, Seongkook Heo, Hyong-Euk Lee, and Geehyuk Lee, <strong>IrPen: A 6-DOF Pen System to
+                    Support Over-the-surface Interactions with Tablet Computers,</strong> IEEE Computer Graphics and
+                    Applications, 34(3) <a href=
+                    "http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=6813983">Paper</a> | <a href=
+                    "https://www.youtube.com/watch?v=AvhKnDu4rLg">Video</a></p>
+                </div>
             </div>
 
 
             <h3 id="others">Understanding people</h3>
 
-                        <div class="media project-content">
-              <div class="media-left">
-                <a href="#">
-                  <img class="media-object img-rounded" src="images/persnap.jpg" width="120" alt="...">
-                </a>
-              </div>
-              <div class="media-body">
-                <h4 class="media-heading">Snapping</h4>
-                <p>
-Seongkook Heo, Yong-ki Lee, Jiho Yeom, Geehyuk Lee, <strong>Design of a Shape Dependent Snapping Algorithm</strong>, CHI 2012 Works-in-Progress
 
- <a href="http://dl.acm.org/citation.cfm?id=2223777">Paper</a></p>
-              </div>
+            <p class="project-content">Here are some projects aim to make computers to understand people and to help
+            designers to better understand in-situ challenges while designing interaction. I like the snapping feature
+            of many modern applications, but at the same time, I have always been struggling aligning shapes at the
+            exact location I want. With my colleagues, we discussed and conducted an experiment to see where people
+            align different shapes and how it is different from the way computers align. We then came with a
+            <b>Shape-dependent snapping algorithm.</b> Would there be a way to <b>discover types of relationship</b>
+            between members in an organization? We investigated location and messaging history between members and
+            found that we can determine whether these members are friends or colleagues. </p>
+
+
+            <div class="media project-content">
+                <div class="media-left">
+                    <a href="#"><img alt="..." class="media-object img-rounded" src="images/persnap.jpg" width=
+                    "120"></a>
+                </div>
+
+
+                <div class="media-body">
+                    <h4 class="media-heading">Snapping</h4>
+
+
+                    <p>Seongkook Heo, Yong-ki Lee, Jiho Yeom, Geehyuk Lee, <strong>Design of a Shape Dependent Snapping
+                    Algorithm</strong>, CHI 2012 Works-in-Progress <a href=
+                    "http://dl.acm.org/citation.cfm?id=2223777">Paper</a></p>
+                </div>
             </div>
 
-                        <div class="media project-content">
-              <div class="media-left">
-                <a href="#">
-                  <img class="media-object img-rounded" src="images/social.png" width="120" alt="...">
-                </a>
-              </div>
-              <div class="media-body">
-                <h4 class="media-heading">Mining social relationship</h4>
-                <p>
-Jinhyuk Choi, SeongKook Heo, Jaehyun Han, Geehyuk Lee, and Junehwa Song, <strong>
-Mining Social Relationship Types in an Organization using Communication Patterns</strong>, CSCW 2013 <a href="http://dl.acm.org/citation.cfm?id=2441811">Paper</a></p>
-              </div>
+
+            <div class="media project-content">
+                <div class="media-left">
+                    <a href="#"><img alt="..." class="media-object img-rounded" src="images/social.png" width=
+                    "120"></a>
+                </div>
+
+
+                <div class="media-body">
+                    <h4 class="media-heading">Mining social relationship</h4>
+
+
+                    <p>Jinhyuk Choi, SeongKook Heo, Jaehyun Han, Geehyuk Lee, and Junehwa Song, <strong>Mining Social
+                    Relationship Types in an Organization using Communication Patterns</strong>, CSCW 2013 <a href=
+                    "http://dl.acm.org/citation.cfm?id=2441811">Paper</a></p>
+                </div>
             </div>
 
-                        <div class="media project-content">
-              <div class="media-left">
-                <a href="#">
-                  <img class="media-object img-rounded" src="images/f1.png" width="120" alt="...">
-                </a>
-              </div>
-              <div class="media-body">
-                <h4 class="media-heading">In-situ participatory design</h4>
-                <p>
-                Changmin Kim, Seongkook Heo, Kyeongah Jeong, Youn-kyoung Lim, 
-<strong>Formula One: Rapid In-the-Wild Design and Evaluation of Interactive Prototypes 
-</strong>, HCI Korea 2013 </p>
-              </div>
-            </div>
 
+            <div class="media project-content">
+                <div class="media-left">
+                    <a href="#"><img alt="..." class="media-object img-rounded" src="images/f1.png" width="120"></a>
+                </div>
+
+
+                <div class="media-body">
+                    <h4 class="media-heading">In-situ participatory design</h4>
+
+
+                    <p>Changmin Kim, Seongkook Heo, Kyeongah Jeong, Youn-kyoung Lim, <strong>Formula One: Rapid
+                    In-the-Wild Design and Evaluation of Interactive Prototypes</strong> , HCI Korea 2013</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -518,6 +582,7 @@ Mining Social Relationship Types in an Organization using Communication Patterns
 
             <h3 id="patents">Patents</h3>
 
+
             <ul>
                 <li>To be updated</li>
             </ul>
@@ -527,53 +592,67 @@ Mining Social Relationship Types in an Organization using Communication Patterns
 
     <section class="content-section" id="fun">
         <div class="container">
-            <h2>Side Projects</h2>            
-            I have done several side projects with lab mates and friends, which were fun and also rewarding(!). 
+            <h2>Side Projects</h2>
+            I have done several side projects with lab mates and friends, which were fun and also rewarding(!).
 
-                        <div class="media project-content">
-              <div class="media-left">
-                <a href="#">
-                  <img class="media-object img-rounded" src="images/griptoidentify.png" width="120" alt="...">
-                </a>
-              </div>
-              <div class="media-body">
-                <h4 class="media-heading">Grip-to-identify</h4>
-                <p>
-Using a touch-sensitive mouse, we built a system that measures your mouse grip and identifies who you are. We got a 2nd place People's choice award at UIST '11 Student Innovation Contest. <a href="https://www.youtube.com/watch?v=83hrdlR8Vlo">Video</a>
-              </div>
+            <div class="media project-content">
+                <div class="media-left">
+                    <a href="#"><img alt="..." class="media-object img-rounded" src="images/griptoidentify.png" width=
+                    "120"></a>
+                </div>
+
+
+                <div class="media-body">
+                    <h4 class="media-heading">Grip-to-identify</h4>
+
+
+                    <p>Using a touch-sensitive mouse, we built a system that measures your mouse grip and identifies
+                    who you are. We got a 2nd place People's choice award at UIST '11 Student Innovation Contest.
+                    <a href="https://www.youtube.com/watch?v=83hrdlR8Vlo">Video</a></p>
+                </div>
             </div>
 
-                        <div class="media project-content">
-              <div class="media-left">
-                <a href="#">
-                  <img class="media-object img-rounded" src="images/tteokpad.png" width="120" alt="...">
-                </a>
-              </div>
-              <div class="media-body">
-                <h4 class="media-heading">TteokPad: Slingshot</h4>
-                <p>
-We built a slingshot device that is controlled with a force-sensitive touchpad. We named it as TteokPad, where 'Tteok' is how we call rice cakes in Korean. We received 2nd place People's choice award again at UIST '12 Student Innovation Contest. <a href="https://www.youtube.com/watch?v=Hk52ixuC_M0">Video</a></p>
-              </div>
+
+            <div class="media project-content">
+                <div class="media-left">
+                    <a href="#"><img alt="..." class="media-object img-rounded" src="images/tteokpad.png" width=
+                    "120"></a>
+                </div>
+
+
+                <div class="media-body">
+                    <h4 class="media-heading">TteokPad: Slingshot</h4>
+
+
+                    <p>We built a slingshot device that is controlled with a force-sensitive touchpad. We named it as
+                    TteokPad, where 'Tteok' is how we call rice cakes in Korean. We received 2nd place People's choice
+                    award again at UIST '12 Student Innovation Contest. <a href=
+                    "https://www.youtube.com/watch?v=Hk52ixuC_M0">Video</a></p>
+                </div>
             </div>
 
-            
-                        <div class="media project-content">
-              <div class="media-left">
-                <a href="#">
-                  <img class="media-object img-rounded" src="images/waterbottle.jpg" width="120" alt="...">
-                </a>
-              </div>
-              <div class="media-body">
-                <h4 class="media-heading">Water-bottle bagpipe</h4>
-                <p>
-In this project, we bulit a system that controls the water level in a glass bottle and lets users to blow wind by pressing an air bag. This project got into the 2nd Place in Most Creative section at UIST '13 Student Innovation Contest. <a href="https://www.youtube.com/watch?v=8pY_USsqFxs">Video</a>
-            </p>              </div>
+
+            <div class="media project-content">
+                <div class="media-left">
+                    <a href="#"><img alt="..." class="media-object img-rounded" src="images/waterbottle.jpg" width=
+                    "120"></a>
+                </div>
+
+
+                <div class="media-body">
+                    <h4 class="media-heading">Water-bottle bagpipe</h4>
+
+
+                    <p>In this project, we bulit a system that controls the water level in a glass bottle and lets
+                    users to blow wind by pressing an air bag. This project got into the 2nd Place in Most Creative
+                    section at UIST '13 Student Innovation Contest. <a href=
+                    "https://www.youtube.com/watch?v=8pY_USsqFxs">Video</a></p>
+                </div>
             </div>
+
 
             <h2>Bike and me</h2>
-            I love bikes. Here are some pictures of my bikes and myself. 
-
-
+            I love bikes. Here are some pictures of my bikes and myself.
         </div>
     </section>
 
