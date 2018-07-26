@@ -3,7 +3,13 @@
     padding-top: 50px;
 /*    padding-bottom: 20px;
     color: #232323;*/
+
   }
+
+  li{
+  margin: 10px 0;
+  }
+
   
   /* Customize container */
   @media(min-width: 768px) {
