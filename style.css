@@ -10,6 +10,23 @@
   margin: 10px 0;
   }
 
+pauthor {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.9em;
+  color: dimgray;  
+}
+ptitle {
+  font-weight: bold;
+}
+pconf {
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 0.9em;
+  color: dimgray;
+}
+
+ .top5 { margin-top:10px; }
   
   /* Customize container */
   @media(min-width: 768px) {
