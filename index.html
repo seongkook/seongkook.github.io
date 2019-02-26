@@ -1,41 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-	<script src="js/jquery.js">
-	</script>
+	
 	<meta charset="utf-8">
-	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta content="" name="description">
 	<meta content="" name="author">
-	<title>Seongkook Heo</title>
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-	<link href="style.css" rel="stylesheet" type="text/css"><!-- Optional theme -->
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" rel="stylesheet"><!-- Latest compiled and minified JavaScript -->
+	<title>Seongkook Heo</title>    
 
-	<script src="js/jquery.js">
-	</script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<link href="style.css" rel="stylesheet" type="text/css">
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 	</script>
 	<script src="js/jquery.easing.min.js">
 	</script>
 	<script src="js/scrolling-nav.js">
 	</script>
+	
+	<script type="text/javascript">
+	$(function () {
+	    $('[data-toggle="tooltip"]').tooltip()
+	})
+	</script>
+
 </head>
+
 <body data-spy="scroll" data-target=".navbar-fixed-top" id="page-top">
 	<section class="intro-section" id="about">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-4"><br><img class="img-responsive" src="images/me.jpg"></div>
+				<div class="col-sm-4"><br><img class="img-fluid" src="images/me.jpg"></div>
 				<div class="col-sm-8">
+					<br>
 					<h1 id="seongkookheo">Seongkook Heo</h1>
 					<p>I am a Postdoctoral Research Fellow in the <a href="http://www.dgp.toronto.edu/">DGP lab</a> at the <a href="https://www.utoronto.ca/">University of Toronto</a>, where I work with <a href="http://www.dgp.toronto.edu/~dwigdor/">Prof. Daniel Wigdor</a>. I received my PhD in Computer Science at the <a href="http://kaist.ac.kr">KAIST</a> in 2017, advised by <a href="http://hcil.kaist.ac.kr/">Prof. Geehyuk Lee</a>. I was also a research intern at industry research labs, including <a href="https://www.sait.samsung.co.kr/saithome/main/main.do"> Samsung Advanced Institute of Technology</a>, <a href="https://www.microsoft.com/en-us/research/">Microsoft Research</a> (with <a href="https://www.microsoft.com/en-us/research/people/kenh/"> Dr. Ken Hinckley</a>), and <a href="https://autodeskresearch.com">Autodesk Research</a> (with <a href="http://tovigrossman.com">Dr. Tovi Grossman</a>). 
 					</p>
 					<p>
 					I dream a future where all humans can live up to their potential through the use of properly designed technology. As a Human-Computer Interaction researcher, I design, build, and study user interfaces and interaction techniques as well as new technologies that allow us to better communicate with computers and with people through the use of computers. </p>
-					<br>
-					<p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:seongkook@dgp.toronto.edu"><strong>seongkook@dgp.toronto.edu</strong></a><br>
+					
+					<p><a href="mailto:seongkook@dgp.toronto.edu"><strong>seongkook@dgp.toronto.edu</strong></a><br>
 					<span class="glyphicon glyphicon-file"></span> <a href="cv.pdf"><strong>Curriculum Viate</strong></a><br>
 					<span class="glyphicon glyphicon-user"></span> <a href="https://scholar.google.com/citations?hl=en&amp;user=7r0_F0kAAAAJ"><strong>Google scholar Page</strong></a></p>
 				</div>
@@ -43,12 +49,237 @@
 		</div>
 	</section>
 
-	<section class="content-section" id="research">
+	<section class="research-section" id="research">
 		<div class="container">
-			<h2 id="research">Research Publications</h2></br>
+			<h2 id="research">Research</h2>
+			<p>
+				My research can be grouped into three categories: <em><strong>1) expanding interaction bandwidth between humans and computers </em></strong>, <em><strong>2) enhancing human-human communication through computers </em></strong>, and <em><strong>3) designing interaction techniques for wearable computers</em></strong>. 
+			</p>
+			<h4>Enriching Hand Interaction Between Humans and Computers</h4>
+			<p>
+            Computers are more powerful and mobile than ever, and we use them every day for numerous tasks. Our interaction with these mobile computers is usually made by a finger movement on a flat surface, delivering our intention as a 2D position information and displays information via a visual display. In contrast, in the real world, our physical manipulation is rich and bidirectional. We skillfully make complex hand movements to efficiently and effectively express our intentions and feel the reaction through our touch. My research developed new technologies and interaction techniques to enable computers to sense and generate previously unused properties of physical manipulation in human-computer interaction, both for input and output. 
+        	</p>
+			<h5>Rich Input Techniques</h5>			
+			<div class="d-flex flex-wrap">
+				<div class="card mb-1 mr-1" style="width: 17rem;">
+				  <img src="images/fdsense2.jpg" class="card-img-top" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title">FDSense</h5>
+				    <p class="card-text">				    	
+				    	FDSense enables estimating the stiffness of end effectors touching the surface by calculating the relationship between the changes in touch area and force by time measured on a commodity force-sensing touchpad. We demonstrate the uses of stiffness-augmented touch interaction for expressive applications. 
+				    </p>
+				    <span class="badge badge-secondary">UIST '18</span>
+				  </div>
+				</div>
+				<div class="card mb-1 mr-1" style="width: 17rem;">
+				  <img src="images/pretouch.jpg" class="card-img-top" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title">Pre-Touch Interaction</h5>
+				    <p class="card-text">Our touch is in fact started before making a contact. We explored a set of interaction techniques that utilizes grip and hover information before, during, and after the contact.</p>
+				    <span class="badge badge-secondary">CHI '16</span>
+				  </div>
+				</div>
+				<div class="card mb-1 mr-1" style="width: 17rem;">
+				  <img src="images/melodicTap.JPG" class="card-img-top" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title">MelodicTap</h5>
+				    <p class="card-text">While hotkeys makes our interaction more efficient, learning to use them can be time-consuming and degrades performance. MelodicTap uses a series of multi-finger tapping gestures for invoking hotkeys, which helps people to learn hotkeys without performace drops. </p>
+				    <span class="badge badge-secondary">OzCHI '16</span>
+				  </div>
+				</div>
+				<div class="card mb-1 mr-1" style="width: 17rem;">
+				  <img src="images/tatatap.png" class="card-img-top" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title">Consecutive Distant Taps</h5>
+				    <p class="card-text">We collected and analyzed touch gestures made on an iPad while using various applications and found an input space that is currently unused - consecutive distant taps. We show two interaction techniques that uses this complementary input space. </p>
+				    <span class="badge badge-secondary">CHI '14</span>
+				  </div>
+				</div>
+				<div class="card mb-1 mr-1" style="width: 17rem;">
+				  <img src="images/shear.jpg" class="card-img-top" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title">Multi-Touch Shear Force</h5>
+				    <p class="card-text">While tangential force can add complementary input vocabulary to a touch interface, sensing tangential forces at multiple touch points is challenging. We developed a method that estimates tangential forces from subtle touch movements made by finger tip deformation. </p>
+				    <span class="badge badge-secondary">CHI '13</span>
+				  </div>
+				</div>
+				<div class="card mb-1 mr-1" style="width: 17rem;">
+				  <img src="images/longpad.jpg" class="card-img-top" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title">LongPad</h5>
+				    <p class="card-text">LongPad is a touchpad that uses sets of infrared LEDs and photodiodes that can measure shapes and distance of hand parts on or above the touch surface. With LongPad, we can have new hover-enriched touch gestures and prevent > 99% of accidental touches. </p>
+				    <span class="badge badge-secondary">CHI '13</span>
+				  </div>
+				</div>
+				<div class="card mb-1 mr-1" style="width: 17rem;">
+				  <img src="images/forceGestures.jpg" class="card-img-top" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title">Force Gestures</h5>
+				    <p class="card-text">
+				    	Force Gestures are touch screen gestures augmented with the normal and tangential forces on the screen. We built a custom device to enable measuring the multidimensional forces and designed the new gesture set. 
+				    </p>
+				    <span class="badge badge-secondary">UIST '11</span>
+				  </div>
+				</div>
+				<div class="card mb-1 mr-1" style="width: 17rem;">
+				  <img src="images/forcedrag.jpg" class="card-img-top" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title">ForceDrag</h5>
+				    <p class="card-text">
+				    	ForceDrag introduces a new method of using normal force as a modifier of a touch gesture. This work investigates the use of modifiers with different number of levels and modifier selection techniques. 
+				    </p>			
+				    <span class="badge badge-secondary">OzCHI '12</span>
+				  </div>
+				</div>
+				<div class="card mb-1 mr-1" style="width: 17rem;">
+				  <img src="images/forcetap.jpg" class="card-img-top" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title">ForceTap</h5>
+				    <p class="card-text">Some modern mobile devices can sense force from a touch screen, however, it was not available when this work was being conducted. We developed a sensor fusion technique that uses device acceleration to estimate the impact of a tapping gesture. </p>
+				    <span class="badge badge-secondary">MobileHCI '11</span>
+				  </div>
+				</div>
+			</div>
+			<br>
+			<h5>Haptic Feedback Technologies</h5>
+			<div class="d-flex flex-wrap">
+				<div class="card mb-1 mr-1" style="width: 17rem;">
+				  <img src="images/thor.jpg" class="card-img-top" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title">Thor's Hammer</h5>
+				    <p class="card-text">
+				    	Thor's Hammer is a new handheld haptic device that uses propeller propulsion to generate ungrounded 3-DOF force feedback without the need for physical grounding or heavy air compressors. It enables strong and continuous 3-DOF force feedback to be used in mobile AR/VR scenarios.  
+				    </p>		    
+				    <span class="badge badge-secondary">CHI '18</span>
+				  </div>
+				</div>
+
+				<div class="card mb-1 mr-1" style="width: 17rem;">
+				  <img src="images/shearHaptic.jpg" class="card-img-top" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title">Compliance Illusion</h5>
+				    <p class="card-text">
+				    	We developed a haptic feedback method that generates an elastic movement illusion on a rigid surface with a tangential force sensor and a vibrotactile actuator. The illusive movement can be programmatically controlled and can deliver information through touch.  
+				    </p>		    
+				    <span class="badge badge-secondary">IEEE Trans. Haptics, 2017</span>
+				  </div>
+				</div>
+			</div>
+
+
+			<br>
+			<h4>Enhancing Human-Human Communication Through Computers</h4>
+			<p>
+			These days, many of our communications to other people are made through computers. We conducted research to understand how people communicate differently to others in different types of relationships, how people communicate and engage through livestreams, and develop new methods to infer relationship types and to support knowledge learning behaviors through livestreams. 
+			</p>
+
+			<div class="d-flex flex-wrap">
+				<div class="card mb-1 mr-1" style="width: 17rem;">
+				  <img src="images/StreamWiki.jpg" class="card-img-top" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title">StreamWiki</h5>
+				    <p class="card-text">Knowledge sharing livestreams bring new learning experiences that is more engaging and interactive compared to traditional online learning methods. StreamWiki is a tool that allows the viewers to collaboratively generate archival documentation. </p>
+				    <span class="badge badge-secondary">CSCW '18</span>
+				  </div>
+				</div>
+
+				<div class="card mb-1 mr-1" style="width: 17rem;">
+				  <img src="images/youwatch.png" class="card-img-top" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title">Livestreaming in China</h5>
+				    <p class="card-text">Live streaming is making a huge impact in China, with more than 200 million viewers each night. This work shares the motivations and experiences of the livestream vieweres in China as well as the insights we gained from the study. 
+				    </p>		    
+				    <span class="badge badge-secondary">CHI '18</span>
+				  </div>
+				</div>
+
+				<div class="card mb-1 mr-1" style="width: 17rem;">
+				  <img src="images/social.JPG" class="card-img-top" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title">Inferring Relationship Types</h5>
+				    <p class="card-text">
+				    	We developed a method that infers social relationship types among people in the same organization by analyzing communication patterns. Our method collects co-location data of people and instant messenger data and uses machine learning techniques to infer social relationship types.
+				    </p>		    
+				    <span class="badge badge-secondary">CSCW '13</span>
+				  </div>
+				</div>
+			</div>
+			<br>
+
+			<h4>Interaction Techniques for Wearable Computers</h4>
+			<p>
+				Wearable computers, such as smart glasses and smartwatches, make people to access information in variety of scenarios that were not possible before. However, these computers suffer from usability issues coming from the limited input area. We devleoped new interfaces and interaction techniques for wearable computers. 
+			</p>
+			<div class="d-flex flex-wrap">
+				<div class="card mb-1 mr-1" style="width: 17rem;">
+				  <img src="images/nohand.jpg" class="card-img-top" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title">No-Handed Smartwatch Interaction</h5>
+				    <p class="card-text">Smartwatches require both hands to operate, which makes the use in situations where the user is actively performing a task with their hands difficult. This work explores alternate ways to interact with smartwatches other than using finger touch. 
+				    </p>		    
+				    <span class="badge badge-secondary">GI '17</span>
+				  </div>
+				</div>
+
+				<div class="card mb-1 mr-1" style="width: 17rem;">
+				  <img src="images/TOSS.jpg" class="card-img-top" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title">Cross-device Text Entry</h5>
+				    <p class="card-text">Entering text for smart glasses is challenging because it can be tiring to keep arms high to touch the device and voice input is not always appropriate. We developed a cross-device method that allows users to use their smartwatches to enter text to smart glasses. 
+				    </p>		    
+				    <span class="badge badge-secondary">ISS '17</span>
+				  </div>
+				</div>
+
+				<div class="card mb-1 mr-1" style="width: 17rem;">
+				  <img src="images/splitboard.jpg" class="card-img-top" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title">SplitBoard</h5>
+				    <p class="card-text">
+				    	SplitBoard is a new smartwatch keyboard that splits the QWERTY keyboard layout into half and lets users to quickly switch between spilts with a flick gesture. Our study showed that the technique outperfoms other techniques both in stationary and walking scenarios. 
+				    </p>
+				    <span class="badge badge-secondary">CHI '15</span><span class="badge badge-secondary">IwC, 2016</span>
+				  </div>
+				</div>
+			</div>
+
+			<br>
+			<h4>Other Projects</h4>
+			<div class="d-flex flex-wrap">
+				<div class="card mb-1 mr-1" style="width: 17rem;">
+				  <img src="images/IrPen.jpg" class="card-img-top" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title">IrPen</h5>
+				    <p class="card-text">
+				    	IrPen is a 6-DOF pen device that uses IrCube technology for tracking, which uses a set of infrared LEDs on the pen and a set of photodiodes installed on the frame of the tablet device. We present several interaction techniques that utilizes the position and the orientation of the pen above the surface. 
+				    </p>		    				    
+				    <span class="badge badge-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">IEEE CG&A, 2014</span>
+				  </div>
+				</div>
+
+				<div class="card mb-1 mr-1" style="width: 17rem;">
+				  <img src="images/IrCube.jpg" class="card-img-top" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title">IrCube</h5>
+				    <p class="card-text">
+				    	IrCube is an optical 6-DOF tracking method that is low-cost, small, and accurate. Photodiode sensors placed in the environment measure the light intensity emitted from 13 LEDs installed at a pointer device in different orientations. With the measurements, our system can estimate the position and the orientation of the pointer by solving an inverse problem.
+				    </p>		    
+				    <span class="badge badge-secondary">UIST '11</span> <span class="badge badge-secondary">Electronics Letters, 2011</span>
+				  </div>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+	<section class="content2-section" id="publication">
+		<div class="container">
+			<h2 id="research">Publications</h2>
+			<h3 id="research">Conference and Journal Papers</h3>
 			<div class="row top5">
-				<div class="col-sm-4"><img class="img-responsive" src="images/fdsense2.jpg"></div>
-				<div class="col-sm-8">
+				<div class="col-sm-3"><img class="img-fluid" src="images/fdsense2.jpg"></div>
+				<div class="col-sm-9">
 					<pauthor>
 					Sanghwa Hong, Eunseok Jung, <strong>Seongkook Heo</strong>, and Byungjoo Lee<br></pauthor>
 					<ptitle>
@@ -59,8 +290,8 @@
 				</div>
 			</div>
 			<div class="row top5">
-				<div class="col-sm-4"><img class="img-responsive" src="images/streamwiki.jpg"></div>
-				<div class="col-sm-8">
+				<div class="col-sm-3"><img class="img-fluid" src="images/streamwiki.jpg"></div>
+				<div class="col-sm-9">
 					<pauthor>
 					Zhicong Lu, <strong>Seongkook Heo</strong>, and Daniel Wigdor<br></pauthor>
 					<ptitle>
@@ -71,20 +302,20 @@
 				</div>
 			</div>
 			<div class="row top5">
-				<div class="col-sm-4"><img class="img-responsive" src="images/thor.jpg"></div>
-				<div class="col-sm-8">
+				<div class="col-sm-3"><img class="img-fluid" src="images/thor.jpg"></div>
+				<div class="col-sm-9">
 					<pauthor>
 					<strong>Seongkook Heo</strong>, Christina Chung, Geehyuk Lee, Daniel Wigdor<br></pauthor>
 					<ptitle>
 					Thor's Hammer: An Ungrounded Force Feedback Device Utilizing Propeller-Induced Propulsive Force.<br></ptitle>
 					<pconf>
 					CHI 2018: ACM Conference on Human Factors in Computing Systems. 11 pages.</pconf>
-					<br><span class="glyphicon glyphicon-file"></span> <a href="https://dl.acm.org/citation.cfm?id=3174099"> Paper </a> | <span class="glyphicon glyphicon-film"></span> <a href="https://www.youtube.com/watch?v=wE-nkHiqTyU"> Video </a> | <span class="glyphicon glyphicon-book"></span> <a href="https://github.com/seongkook/ThorsHammer"> Project Resource </a> 				
+					<br><span class="glyphicon glyphicon-file"></span> <a href="https://dl.acm.org/citation.cfm?id=3174099"> Paper </a> | <span class="glyphicon glyphicon-film"></span> <a href="https://www.youtube.com/watch?v=wE-nkHiqTyU"> Video </a> | <span class="glyphicon glyphicon-book"></span> <a href="https://github.com/seongkook/ThorsHammer"> GitHub </a> 				
 				</div>
 			</div>
 			<div class="row top5">
-				<div class="col-sm-4"><img class="img-responsive" src="images/youwatch.png"></div>
-				<div class="col-sm-8">
+				<div class="col-sm-3"><img class="img-fluid" src="images/youwatch.png"></div>
+				<div class="col-sm-9">
 					<pauthor>
 					Zhicong Lu, Haijun Xia, <strong>Seongkook Heo</strong>, Daniel Wigdor<br></pauthor>
 					<ptitle>
@@ -95,8 +326,8 @@
 				</div>
 			</div>			
 			<div class="row top5">
-				<div class="col-sm-4"><img class="img-responsive" src="images/TOSS.jpg"></div>
-				<div class="col-sm-8">
+				<div class="col-sm-3"><img class="img-fluid" src="images/TOSS.jpg"></div>
+				<div class="col-sm-9">
 					<pauthor>
 					Sunggeun Ahn, <strong>Seongkook Heo</strong>, Geehyuk Lee.<br></pauthor>
 					<ptitle>
@@ -107,8 +338,8 @@
 				</div>
 			</div>
 			<div class="row top5">
-				<div class="col-sm-4"><img class="img-responsive" src="images/nohand.JPG"></div>
-				<div class="col-sm-8">
+				<div class="col-sm-3"><img class="img-fluid" src="images/nohand.JPG"></div>
+				<div class="col-sm-9">
 					<pauthor>
 					<strong>Seongkook Heo</strong>, Michelle Annett, Ben Lafreniere, Tovi Grossman, George Fitzmaurice.<br></pauthor>
 					<ptitle>
@@ -119,8 +350,8 @@
 				</div>
 			</div>
 			<div class="row top5">
-				<div class="col-sm-4"><img class="img-responsive" src="images/shearHaptic.jpg"></div>
-				<div class="col-sm-8">
+				<div class="col-sm-3"><img class="img-fluid" src="images/shearHaptic.jpg"></div>
+				<div class="col-sm-9">
 					<pauthor>
 					<strong>Seongkook Heo</strong> and Geehyuk Lee.<br></pauthor>
 					<ptitle>
@@ -131,8 +362,8 @@
 				</div>
 			</div>			
 			<div class="row top5">
-				<div class="col-sm-4"><img class="img-responsive" src="images/melodicTap.JPG"></div>
-				<div class="col-sm-8">
+				<div class="col-sm-3"><img class="img-fluid" src="images/melodicTap.JPG"></div>
+				<div class="col-sm-9">
 					<pauthor>
 					<strong>Seongkook Heo</strong>, Jingun Jung, and Geehyuk Lee.<br></pauthor>
 					<ptitle>
@@ -143,8 +374,8 @@
 				</div>
 			</div>
 			<div class="row top5">
-				<div class="col-sm-4"><img class="img-responsive" src="images/pretouch.jpg"></div>
-				<div class="col-sm-8">
+				<div class="col-sm-3"><img class="img-fluid" src="images/pretouch.jpg"></div>
+				<div class="col-sm-9">
 					<pauthor>
 					Ken Hinckley, <strong>Seongkook Heo</strong>, Christian Holz, Hrvoje Benko, Abigail Sellen, Richard Banks, Kenton O'Hara, Gavin Smyth, and William Buxton.<br></pauthor>
 					<ptitle>
@@ -155,8 +386,8 @@
 				</div>
 			</div>
 			<div class="row top5">
-				<div class="col-sm-4"><img class="img-responsive" src="images/threekeyboard.png"></div>
-				<div class="col-sm-8">
+				<div class="col-sm-3"><img class="img-fluid" src="images/threekeyboard.png"></div>
+				<div class="col-sm-9">
 					<pauthor>
 					Jonggi Hong, <strong>Seongkook Heo</strong>, Poika Isokoski, and Geehyuk Lee.<br></pauthor>
 					<ptitle>
@@ -167,8 +398,8 @@
 				</div>
 			</div>
 			<div class="row top5">
-				<div class="col-sm-4"><img class="img-responsive" src="images/f1.png"></div>
-				<div class="col-sm-8">
+				<div class="col-sm-3"><img class="img-fluid" src="images/f1.png"></div>
+				<div class="col-sm-9">
 					<pauthor>
 					Chang-Min Kim, <strong>Seongkook Heo</strong>, Kyeong Ah Jeong, and Youn-Kyung Lim.<br></pauthor>
 					<ptitle>
@@ -179,8 +410,8 @@
 				</div>
 			</div>			
 			<div class="row top5">
-				<div class="col-sm-4"><img class="img-responsive" src="images/splitboard.jpg"></div>
-				<div class="col-sm-8">
+				<div class="col-sm-3"><img class="img-fluid" src="images/splitboard.jpg"></div>
+				<div class="col-sm-9">
 					<pauthor>
 					Jonggi Hong, <strong>Seongkook Heo</strong>, Poika Isokoski, and Geehyuk Lee.<br></pauthor>
 					<ptitle>
@@ -191,8 +422,8 @@
 				</div>
 			</div>			
 			<div class="row top5">
-				<div class="col-sm-4"><img class="img-responsive" src="images/irpen.jpg"></div>
-				<div class="col-sm-8">
+				<div class="col-sm-3"><img class="img-fluid" src="images/irpen.jpg"></div>
+				<div class="col-sm-9">
 					<pauthor>
 					Jaehyun Han, <strong>Seongkook Heo</strong>, Hyong-Euk Lee, and Geehyuk Lee.<br></pauthor>
 					<ptitle>
@@ -203,8 +434,8 @@
 				</div>
 			</div>
 			<div class="row top5">
-				<div class="col-sm-4"><img class="img-responsive" src="images/tatatap.png"></div>
-				<div class="col-sm-8">
+				<div class="col-sm-3"><img class="img-fluid" src="images/tatatap.png"></div>
+				<div class="col-sm-9">
 					<pauthor>
 					<strong>Seongkook Heo</strong>, Jiseong Gu, and Geehyuk Lee.<br></pauthor>
 					<ptitle>
@@ -215,8 +446,8 @@
 				</div>
 			</div>			
 			<div class="row top5">
-				<div class="col-sm-4"><img class="img-responsive" src="images/screenpad.jpg"></div>
-				<div class="col-sm-8">
+				<div class="col-sm-3"><img class="img-fluid" src="images/screenpad.jpg"></div>
+				<div class="col-sm-9">
 					<pauthor>
 					<strong>Seongkook Heo</strong>, Jaehyun Han, and Geehyuk Lee.<br></pauthor>
 					<ptitle>
@@ -227,8 +458,8 @@
 				</div>
 			</div>
 			<div class="row top5">
-				<div class="col-sm-4"><img class="img-responsive" src="images/shear.jpg"></div>
-				<div class="col-sm-8">
+				<div class="col-sm-3"><img class="img-fluid" src="images/shear.jpg"></div>
+				<div class="col-sm-9">
 					<pauthor>
 					<strong>Seongkook Heo</strong> and Geehyuk Lee.<br></pauthor>
 					<ptitle>
@@ -239,8 +470,8 @@
 				</div>
 			</div>
 			<div class="row top5">
-				<div class="col-sm-4"><img class="img-responsive" src="images/longpad.jpg"></div>
-				<div class="col-sm-8">
+				<div class="col-sm-3"><img class="img-fluid" src="images/longpad.jpg"></div>
+				<div class="col-sm-9">
 					<pauthor>
 					Jiseong Gu, <strong>Seongkook Heo</strong>, Jaehyun Han, Sunjun Kim, and Geehyuk Lee.<br></pauthor>
 					<ptitle>
@@ -251,8 +482,8 @@
 				</div>
 			</div>
 			<div class="row top5">
-				<div class="col-sm-4"><img class="img-responsive" src="images/social.JPG"></div>
-				<div class="col-sm-8">
+				<div class="col-sm-3"><img class="img-fluid" src="images/social.JPG"></div>
+				<div class="col-sm-9">
 					<pauthor>
 					Jinhyuk Choi, <strong>Seongkook Heo</strong>, Jaehyun Han, Geehyuk Lee, and Junehwa Song.<br></pauthor>
 					<ptitle>
@@ -263,8 +494,8 @@
 				</div>
 			</div>			
 			<div class="row top5">
-				<div class="col-sm-4"><img class="img-responsive" src="images/irpen.jpg"></div>
-				<div class="col-sm-8">
+				<div class="col-sm-3"><img class="img-fluid" src="images/irpen.jpg"></div>
+				<div class="col-sm-9">
 					<pauthor>
 					Jaehyun Han, Sangwon Choi, <strong>Seongkook Heo</strong>, and Geehyuk Lee.<br></pauthor>
 					<ptitle>
@@ -275,8 +506,8 @@
 				</div>
 			</div>
 			<div class="row top5">
-				<div class="col-sm-4"><img class="img-responsive" src="images/forcedrag.jpg"></div>
-				<div class="col-sm-8">
+				<div class="col-sm-3"><img class="img-fluid" src="images/forcedrag.jpg"></div>
+				<div class="col-sm-9">
 					<pauthor>
 					<strong>Seongkook Heo</strong> and Geehyuk Lee.<br></pauthor>
 					<ptitle>
@@ -287,8 +518,8 @@
 				</div>
 			</div>			
 			<div class="row top5">
-				<div class="col-sm-4"><img class="img-responsive" src="images/ircube.jpg"></div>
-				<div class="col-sm-8">
+				<div class="col-sm-3"><img class="img-fluid" src="images/ircube.jpg"></div>
+				<div class="col-sm-9">
 					<pauthor>
 					<strong>Seongkook Heo</strong>, Jaehyun Han, Sangwon Choi, Seunghwan Lee, Geehyuk Lee, Hyong-Euk Lee, SangHyun Kim, Won-Chul Bang, DoKyoon Kim, and ChangYeong Kim.<br></pauthor>
 					<ptitle>
@@ -299,8 +530,8 @@
 				</div>
 			</div>
 			<div class="row top5">
-				<div class="col-sm-4"><img class="img-responsive" src="images/6dof.JPG"></div>
-				<div class="col-sm-8">
+				<div class="col-sm-3"><img class="img-fluid" src="images/6dof.JPG"></div>
+				<div class="col-sm-9">
 					<pauthor>
 					Jaehyun Han, <strong>Seongkook Heo</strong>, Geehyuk Lee, Won-Chul Bang, DoKyoon Kim, and ChangYeong Kim.<br></pauthor>
 					<ptitle>
@@ -311,8 +542,8 @@
 				</div>
 			</div>
 			<div class="row top5">
-				<div class="col-sm-4"><img class="img-responsive" src="images/forceGestures.png"></div>
-				<div class="col-sm-8">
+				<div class="col-sm-3"><img class="img-fluid" src="images/forceGestures.jpg"></div>
+				<div class="col-sm-9">
 					<pauthor>
 					<strong>Seongkook Heo</strong> and Geehyuk Lee.<br></pauthor>
 					<ptitle>
@@ -323,8 +554,8 @@
 				</div>
 			</div>
 			<div class="row top5">
-				<div class="col-sm-4"><img class="img-responsive" src="images/forcetap.jpg"></div>
-				<div class="col-sm-8">
+				<div class="col-sm-3"><img class="img-fluid" src="images/forcetap.jpg"></div>
+				<div class="col-sm-9">
 					<pauthor>
 					<strong>Seongkook Heo</strong> and Geehyuk Lee.<br></pauthor>
 					<ptitle>
@@ -334,10 +565,12 @@
 					<br><span class="glyphicon glyphicon-file"></span> <a href="http://dl.acm.org/citation.cfm?id=2037373.2037393"> Paper </a> | <span class="glyphicon glyphicon-film"></span> <a href="https://www.youtube.com/watch?v=J-XXuRzaYrQ"> Video </a>				
 				</div>
 			</div>
+			<br>
+			<h5> Please see <a href="cv.pdf">my CV</a> for full list of publications and patents. 			
 		</div>
 	</section>
 	<div class="container">
-		Last update: Jan 2019
+		Last update: Feb 2019
 	</div>
 	<script>
 	     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -25,12 +25,14 @@ pconf {
   color: dimgray;
 }
 
+
+
  .top5 { margin-top:10px; }
   
-  /* Customize container */
+  /* Customize container */  
   @media(min-width: 768px) {
     .container {
-      max-width: 750px;      
+      max-width: 900px;      
     }
 
   @media(min-width: 768px) {
@@ -42,10 +44,10 @@ pconf {
     .navbar {
         -webkit-transition: background .3s ease-in-out,padding .3s ease-in-out;
         -moz-transition: background .3s ease-in-out,padding .3s ease-in-out;
-        transition: background .3s ease-in-out,padding .3s ease-in-out;                      	
+        transition: background .3s ease-in-out,padding .3s ease-in-out;                       
     }
     .navbar-default {
-    background: rgba(255,255,255, 0.9)!important;	
+    background: rgba(255,255,255, 0.9)!important; 
     }
 
     .top-nav-collapse {
@@ -77,4 +79,8 @@ pconf {
  .project-content{
     padding-left: 20px;
  }
+
+ .card-text{
+  font-size: 0.8em;
+  }
 }
