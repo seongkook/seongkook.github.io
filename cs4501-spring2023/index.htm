@@ -1,0 +1,337 @@
+<html>
+
+<head>
+    <title>CS4501/6501: Engineering Interactive Technologies</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        h1 {
+            margin-bottom: 2rem;
+        }
+        
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+        }
+        table.table tbody tr td,
+table.table thead tr th,
+table.table thead {
+  border-inline: 1px solid lightgray;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="pt-5 pb-5 container">
+
+        <h1 id="pb-5">CS 4501/6501: Engineering Interactive Technologies</h1>
+        <h2 id="pb-5">Spring 2023</h2>
+        <br>
+        <img src="teaser.jpg" class="img-fluid" alt="Teaser image">
+        &nbsp;<br>
+        <p>Computers are no longer just sitting on our desks. They are in our pockets, on our wrists, and sometimes on our eyeglasses. Computer interfaces have also evolved to support interaction with these computers, using various sensing, actuation, and processing technologies. <strong>This course will explore technologies and methods that enable efficient and effective interactions </strong> on computers in various forms, such as wearable computers and virtual/augmented reality headsets. 
+            You will learn the fundamentals and applications of interactive technologies, including sensing, signal processing, and actuation methods. You will also learn to build interactive systems using fabrication, electronics, and software development.
+        </p>
+
+        <h2 id="ia-course-staff">Instructor</h2>
+        <ul>
+            <li><strong><a href="http://seongkookheo.com">Seongkook Heo</a></strong> (<a href="mailto:seongkook@virginia.edu">seongkook@virginia.edu</a>)</li>                
+            <li><strong>Office Hour:</strong> Tuesdays at 10 - 11 am, on Zoom: <a href="https://virginia.zoom.us/my/seongkook">https://virginia.zoom.us/my/seongkook</a> 
+              <br>In-person meetings are also available upon request.
+            </li>
+            </ul>
+            <h2 id="ia-course-staff">TA</h2>
+            <ul>
+            <li><strong>Adil Rahman</strong> (<a href="mailto:ar9fb@virginia.edu">ar9fb@virginia.edu</a>)<br>
+              <strong>Office Hour: </strong> TBA</li>            
+            </li>
+            <li><strong>Erzhen Hu</strong> (<a href="mailto:eh2qs@virginia.edu">eh2qs@virginia.edu</a>)<br>
+              <strong>Office Hour: </strong> TBA</li>            
+            </li>
+            <li><strong>Spencer Keefer</strong> (<a href="mailto:ar9fb@virginia.edu">ar9fb@virginia.edu</a>)<br>
+              <strong>Office Hour: </strong> TBA</li>
+            </li>
+        </ul>
+
+        <!-- <h2>Schedule (Tentative)</h2> -->
+        <!-- <div class="container-fluid">
+            Cell background indicate the type of class, as follows:
+            <div class="col-6">
+                <table class="table table-sm" >
+                    <thead>
+                    <tr>                
+                        <th style="width: 25%" >Fundamentals</th>                
+                        <th style="width: 25%" class="table-success">Applications</th>
+                        <th style="width: 25%" class="table-danger">Labs</th>
+                        <th style="width: 25%" class="table-primary">Project</th>
+                    </tr>  
+                </thead>              
+                </table>
+</div>
+
+        <table class="table table-sm table-hover">
+            <thead>
+              <tr>
+                <th scope="col" style="text-align:center">Week</th>
+                <th style="width: 22%" scope="col">Mon</th>
+                <th style="width: 22%" scope="col">Wed</th>
+                <th style="width: 22%" scope="col">Fri</th>
+                <th scope="col">HW</th>
+                <th scope="col">Project</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" style="text-align:center">1 <br>(1/17)</th>
+                <td></td>
+                <td>Introduction</td>
+                <td>Designing User Interfaces</td>
+                <td>#1: Good UI & Bad UI (Due 1/28)</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row" style="text-align:center">2 <br>(1/24)</th>
+                <td class="table-success">Touch Interfaces 1</td>
+                <td class="table-success">Touch Interfaces 2</td>
+                <td class="table-secondary"><strong>Class Canceled</strong></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row" style="text-align:center">3 <br>(1/31)</th>
+                <td>Basic Electronics & Arduino</td>                
+                <td class="table-danger">Arduino Lab</td>
+                <td>Sensors 1</td>                                
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row" style="text-align:center">4 <br>(2/7)</th>
+                <td>Sensors 2</td>
+                <td>Sensors 3</td>
+                <td class="table-danger">Sensors Lab</td>                
+                <td><strong>Quiz 1</strong> </td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row" style="text-align:center">5 <br>(2/14)</th>
+                <td>Signal Processing 1</td>
+                <td>Signal Processing 2</td>
+                <td>Signal Processing 3</td>                
+                <td>#2: Step Counter <br>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row" style="text-align:center">6 <br>(2/21)</th>
+                <td class="table-danger">Signal Processing Lab</td>
+                <td class="table-success">Fabrication</td>
+                <td>Actuators 1</td>                
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row" style="text-align:center">7 <br>(2/28)</th>
+                <td>Actuators 2</td>
+                <td class="table-danger">Actuators Lab</td>
+                <td>Control Systems</td>                
+                <td><strong>Quiz 2</strong> </td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row" style="text-align:center">8 <br>(3/7)</th>
+                <td class="table-secondary"><strong>No Class (Spring Break)</strong></td>
+                <td class="table-secondary"><strong>No Class (Spring Break)</strong></td>
+                <td class="table-secondary"><strong>No Class (Spring Break)</strong></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row" style="text-align:center">9<br>(3/14)</th>
+                <td>Communication</td>
+                <td class="table-danger">Communication Lab</td>
+                <td class="table-primary">Project Team Building</td>                
+                <td>#3: Game Controller</td>
+                <td>Project Team Forming</td>
+              </tr>
+              <tr>
+                <th scope="row" style="text-align:center">10<br>(3/21)</th>                
+                <td>Wizard of Oz</td>
+                <td class="table-success">VR/AR 1</td>
+                <td class="table-success">VR/AR 2</td>                
+                <td></td>
+                <td>Project Proposal</td>
+              </tr>
+              <tr>
+                <th scope="row" style="text-align:center">11<br>(3/28)</th>
+                <td class="table-success">VR/AR 3</td>
+                <td class="table-success">VR/AR 4</td>
+                <td class="table-primary">Project Work Hour</td>
+                <td><strong>Quiz 3</strong> </td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row" style="text-align:center">12<br>(4/4)</th>
+                <td class="table-success">Haptic Interfaces 1</td>
+                <td class="table-success">Haptic Interfaces 2</td>
+                <td class="table-success">Haptic Interfaces 3</td>
+                <td></td>
+                <td>Progress Report</td>
+              </tr>
+              <tr>
+                <th scope="row" style="text-align:center">13<br>(4/11)</th>
+                <td class="table-success">Wearable Interfaces 1</td>
+                <td class="table-success">Wearable Interfaces 2</td>
+                <td class="table-success">Brain-Computer Interfaces</td>
+                <td><strong>Quiz 4</strong> </td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row" style="text-align:center">14<br>(4/18)</th>
+                
+                <td>Evaluating User Interfaces 1</td>
+                <td>Evaluating User Interfaces 2</td>
+                <td>Course Summary</td>                
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row" style="text-align:center">15<br>(4/25)</th>
+                <td class="table-primary">Project Work Day</td>
+                <td class="table-primary">Final Presentation 1</td>
+                <td class="table-primary">Final Presentation 2</td>
+                <td></td>
+                <td></td>         
+              </tr>
+              <tr>
+                <th scope="row" style="text-align:center">16<br>(5/2)</th>
+                <td>No Class (CHI Conference)</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Final Report</td>                
+              </tr>
+            </tbody>
+          </table>
+</div>         -->
+          
+
+        <h2 id="ia-time-and-location">Time and Location</h2>
+        <ul>
+            <li><strong>When:</strong> 3:30 - 4:45 pm (M,W)</li>
+            <li><strong>Where:</strong> Thornton A120∞ <br>
+                </li>
+        </ul>
+        
+        <h2>Topics Covered</h2>
+        <ul>
+            <li><strong>Fundamentals</strong>
+                <ul>
+            <li>Basic electronics</li>
+            <li>Using sensors</li>
+            <li>Using actuators</li>
+            <li>Signal Processing</li>
+        </ul>
+        </li>
+            <li><strong>Applications and Latest Research</strong>
+                <ul>
+                    <li>Touch Interfaces</li>                                    
+                    <li>Wearable User Interfaces</li>                
+                    <li>Immersive User Interfaces</li>                
+                    <li>Haptic User Interfaces</li>          
+                    <li>Fabrication</li>                         
+            </ul>
+            </li>            
+        </ul>    
+
+        <h2 id="ia-communications">Communications</h2>
+        <ul>
+            <li><strong>Course Website:</strong> All course materials will be on Collab.</li>
+            <li><strong>Discussions:</strong> We use both Piazza and Slack. <br>
+                <strong>Piazza (on Collab) </strong> is for asking questions regarding course material or assignments.<br>
+                <strong>Slack (<a href="https://eit2023.slack.com">https://eit2023.slack.com</a>)</strong> is for directly talking to the instructor or TA, or team forming and team discussions. <br>
+                You can join the Slack workspace using <strong><a href="https://join.slack.com/t/virginia-vob5710/shared_invite/zt-1msmp949d-83wyefYaC1MUcRAYzY65DA">this link</a></strong>.<br>
+                You'll need UVA email address to join the Slack workspace.
+            </li>
+        </ul>
+
+        <h2>Textbook</h2>
+        <ul>
+            <li>There is no official textbook, but you can learn more about the topic from the following books:            
+                <ul>
+            <li><em>Physical Computing: Sensing and Controlling the Physical World with Computers</em>, by Dan O'Sullivan and Tom Igoe, Thomson Course Technology</li>
+            <li><em>HCI Beyond the GUI: Design for Haptic, Speech, Olfactory, and Other Nontraditional Interfaces</em>, by Philip Kortum, Morgan Kaufmann</li>
+            <li><em>Human Computer Interaction Handbook: Fundamentals, Evolving Technologies, and Emerging Applications, Third Edition (Human Factors and Ergonomics)</em>, Julie A. Jacko, CRC Press</li>
+        </ul>
+        </li>
+        </ul>    
+
+        <h2 id="ia-prerequisites">Prerequisites</h2>
+        <ul>
+            <li>CS3205: HCI in Software Development, CS4501: Usability Engineering, or CS6501: Human-Computer Interaction. <br> You are eligible if you have taken any of these courses. <br>Talk to Seongkook if you didn't take CS3205 or other HCI-related courses but still want to take this course. </li>
+            <li>This course has assignments and a project that require some programming skills. So you should be comfortable writing code. </li>
+        </ul>
+
+
+
+        <h2 id="ia-grading-policy">Grading Policy</h2>
+        <!-- <strong>CS4501</strong> -->
+        <ul>
+            <li> Lab reports (20%)</li>
+            <li> Assignments (30%)</li>
+            <li> Quizzes (10%)</li>
+            <li> Project (40%)</li>
+        </ul>
+
+        <h2>For CS6501 students:</h2>        
+        <ul>
+            <li> <strong>CS Breadth Area of this course:</strong> Cyber Physical Systems, Internet of Things, Embedded Systems</li>
+            <li> Students enrolled in CS6501 section has additional requirements, including
+                <ul>
+                    <li>Weekly reading responses: You will read one research paper a week and write a three-paragraph report that includes 1) summary of the paper and 2) your reaction to the paper. <br>
+                    You can find an example <a href="https://seongkookheo.com/cs6501-fall2020/HCI-R1.pdf">HERE</a> </li>
+                    <li>Course project: Your course project will be more research-oriented. </li>
+                </ul>
+            </li>
+            <li>With these differences, grading scheme is also slightly different:
+                <ul>
+                    <li> Reading Responses (10%). Two lowest-grade responses won't be counted towards your grade.</li>
+                    <li> Lab reports (15%)</li>
+                    <li> Assignments (25%)</li>
+                    <li> Quizzes (10%)</li>
+                    <li> Project (40%)</li>
+                </ul>                
+            </li>
+        </ul>
+    
+    <h2>Late Submission Policy</h2>
+    <ul>
+        <li>
+            You may submit the reports until three days after the deadline, with 10%, 20%, and 40% penalty.
+        </li>
+    </ul>
+
+        <h2 id="ia-students-with-disabilities-or-learning-needs">Students with disabilities or learning needs</h2>
+        <p>It is my goal to create a learning experience that is as accessible as possible. If you anticipate any issues related to the format, materials, or requirements of this course, please meet with me outside of class so we can explore potential options. Students with disabilities may also wish to work with the Student Disability Access Center to discuss a range of options to removing barriers in this course, including official accommodations. Please visit their website for information on this process and to apply for services online: <a href="http://sdac.studenthealth.virginia.edu">sdac.studenthealth.virginia.edu</a>. If you have already been approved for accommodations through SDAC, please send me your accommodation letter and meet with me so we can develop an implementation plan together.</p>
+        <h2 id="ia-discrimination-and-power-based-violence">Discrimination and power-based violence</h2>
+        <p>The University of Virginia is dedicated to providing a safe and equitable learning environment for all students. To that end, it is vital that you know two values that I and the University hold as critically important:</p>
+        <ol>
+            <li>Power-based personal violence will not be tolerated.</li>
+            <li>Everyone has a responsibility to do their part to maintain a safe community on Grounds.</li>
+        </ol>
+        <p>If you or someone you know has been affected by power-based personal violence, more information can be found on the UVA Sexual Violence website that describes reporting options and resources available - <a href="www.virginia.edu/sexualviolence">www.virginia.edu/sexualviolence</a>.</p>
+        <p>As your professor and as a person, know that I care about you and your well-being and stand ready to provide support and resources as I can. As a faculty member, I am a responsible employee, which means that I am required by University policy and federal law to report what you tell me to the University's Title IX Coordinator. The Title IX Coordinator's job is to ensure that the reporting student receives the resources and support that they need, while also reviewing the information presented to determine whether further action is necessary to ensure survivor safety and the safety of the University community. If you wish to report something that you have seen, you can do so at the <strong>Just Report It</strong> portal (<a href="http://justreportit.virginia.edu/">http://justreportit.virginia.edu/</a>). <strong>The worst possible situation would be for you or your friend to remain silent when there are so many here willing and able to help.</strong></p>
+        <h2 id="ia-religious-accommodations">Religious accommodations</h2>
+        <p>It is the University's long-standing policy and practice to reasonably accommodate students so that they do not experience an adverse academic consequence when sincerely held religious beliefs or observances conflict with academic requirements.</p>
+        <p>Students who wish to request academic accommodation for a religious observance should submit their request in writing directly to me as far in advance as possible. Students who have questions or concerns about academic accommodations for religious observance or religious beliefs may contact the University’s Office for Equal Opportunity and Civil Rights (EOCR) at <a href="mailto:UVAEOCR@virginia.edu">UVAEOCR@virginia.edu</a> or 434-924-3200.</p>
+        <h2 id="ia-honor">Honor</h2>
+        <p>I trust every student in this course to fully comply with all of the provisions of the University’s Honor Code. By enrolling in this course, you have agreed to abide by and uphold the Honor System of the University of Virginia, as well as the following policies specific to this course.</p>
+        <ul>
+            <li>All graded assignments must be pledged.</li>
+            <li>All suspected violations will be forwarded to the Honor Committee, and you may, at my discretion, receive an immediate zero on that assignment regardless of any action taken by the Honor Committee.</li>
+        </ul>
+        <p>Please let me know if you have any questions regarding the course Honor policy. If you believe you may have committed an Honor Offense, you may wish to file a Conscientious Retraction by calling the Honor Offices at (434) 924-7602. For your retraction to be considered valid, it must, among other things, be filed with the Honor Committee before you are aware that the act in question has come under suspicion by anyone. More information can be found at <a href="http://honor.virginia.edu">http://honor.virginia.edu</a>. Your Honor representatives can be found at: <a href="http://honor.virginia.edu/representatives">http://honor.virginia.edu/representatives</a>.</p>
+    </div>
+</body>
+
+</html>
